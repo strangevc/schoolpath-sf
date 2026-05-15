@@ -75,7 +75,7 @@ export default function SchoolCard({
             <span className="font-medium tabular-nums">
               {Math.round(pctSuccess * 100)}%
             </span>{" "}
-            {summary.toLowerCase()}
+            of applicants like you {summary}
           </div>
         )}
         {!statsLine && reason && (
