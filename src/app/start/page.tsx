@@ -97,17 +97,17 @@ export default function StartPage() {
           ← SchoolPath SF
         </a>
         <h1 className="mt-6 text-[34px] md:text-[44px] leading-[1.1] font-semibold tracking-tight">
-          Tell us about your situation.
+          About your family
         </h1>
-        <p className="mt-3 text-muted text-[16px] md:text-[17px] leading-[1.55]">
-          About 45 seconds. Everything stays on your device — we don&rsquo;t
-          have a server.
+        <p className="mt-3 text-muted text-[16px] md:text-[17px] leading-[1.6]">
+          Your information stays on your device. We do not collect or
+          transmit any personal data.
         </p>
 
         <form onSubmit={handleSubmit} className="mt-10 flex flex-col gap-9">
           <Field
             label="What grade are you applying for?"
-            help="The TK Feeder system is new for 2026-27 — TK students auto-promote to K at the same elementary."
+            help="Beginning in 2026-27, students who attend TK at an SFUSD site automatically continue to Kindergarten at the connected elementary school. No second application is required."
           >
             <div className="flex gap-2">
               {(["TK", "K"] as const).map((g) => (
@@ -131,7 +131,7 @@ export default function StartPage() {
 
           <Field
             label="Your home address"
-            help="We use this to find your attendance area school and the CTIP1 advantage zone."
+            help="Used to determine your attendance area school and whether you qualify for the CTIP1 tiebreaker. Address is not saved to any server."
           >
             <input
               value={address}
@@ -143,7 +143,7 @@ export default function StartPage() {
 
           <Field
             label="Your attendance area school"
-            help="We'll auto-detect this from your address once map data is loaded. For now, pick the elementary closest to home (or skip — the tool still works)."
+            help="Detected automatically from your address. You can also select it manually below, or skip if you are unsure."
           >
             <SchoolSelect
               schools={allElem}
@@ -154,8 +154,8 @@ export default function StartPage() {
           </Field>
 
           <Field
-            label="Do you live in a CTIP1 zone?"
-            help="CTIP1 zones (low test-score areas) get an enrollment advantage. We auto-detect from your address; for now answer if you know."
+            label="Do you live in a CTIP1 area?"
+            help="CTIP1 (Census Tract Integration Preference) is an SFUSD tiebreaker for residents of designated areas. Detected automatically from your address."
           >
             <div className="flex gap-2">
               {(["yes", "no", "unknown"] as const).map((v) => (
@@ -213,8 +213,8 @@ export default function StartPage() {
           </Field>
 
           <Field
-            label="Currently in SFUSD PreK or TK?"
-            help="If you're already at an Early Education site, you may have a feeder advantage at certain elementaries."
+            label="Currently enrolled in SFUSD PreK or TK?"
+            help="Students currently at an SFUSD Early Education site may have feeder priority for the connected elementary school."
           >
             <div className="flex gap-2">
               <button
@@ -253,8 +253,8 @@ export default function StartPage() {
           </Field>
 
           <Field
-            label="What matters most to you?"
-            help="Pick a few. We use these to surface schools you might miss."
+            label="Priorities (optional)"
+            help="Used to surface schools that may match your priorities. Select any that apply."
           >
             <div className="flex flex-wrap gap-2">
               {MATTERS_OPTIONS.map((opt) => {
@@ -282,14 +282,12 @@ export default function StartPage() {
             disabled={submitting}
             className="self-start h-14 px-8 rounded-full bg-ink text-paper text-[16px] font-medium hover:opacity-90 transition-opacity disabled:opacity-60"
           >
-            {submitting ? "Detecting…" : "Build my list →"}
+            {submitting ? "Looking up your address…" : "Continue"}
           </button>
           {!MAPBOX_TOKEN && (
-            <div className="text-[12px] text-muted bg-rule/30 p-3 rounded-xl">
-              No Mapbox token set — auto-detection of attendance area and CTIP1
-              is disabled. Add <code>NEXT_PUBLIC_MAPBOX_TOKEN</code> to{" "}
-              <code>.env.local</code> and reload. The tool still works with
-              manual selections above.
+            <div className="text-[12px] text-muted bg-rule/30 p-3 rounded-xl leading-[1.55]">
+              Automatic detection of attendance area and CTIP1 is currently
+              disabled. Manual selections will still produce a valid ranking.
             </div>
           )}
         </form>

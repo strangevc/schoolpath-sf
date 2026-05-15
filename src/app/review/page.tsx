@@ -67,7 +67,7 @@ export default function ReviewPage() {
             href="/builder"
             className="text-[14px] text-muted hover:text-ink"
           >
-            ← Back to builder
+            ← Back to ranking
           </Link>
           <Link href="/" className="text-[14px] text-muted hover:text-ink">
             SchoolPath SF
@@ -75,10 +75,10 @@ export default function ReviewPage() {
         </header>
 
         <h1 className="text-[34px] md:text-[44px] leading-[1.1] font-semibold tracking-tight">
-          Your ranking is ready.
+          Your ranking
         </h1>
         <p className="mt-3 text-muted text-[16px] leading-[1.6]">
-          Submit at{" "}
+          Submit your application at{" "}
           <a
             href="https://www.sfusd.edu/onlineapp"
             target="_blank"
@@ -87,8 +87,7 @@ export default function ReviewPage() {
           >
             sfusd.edu/onlineapp
           </a>{" "}
-          by <strong>January 30, 2026</strong>. Enter your schools in this
-          order.
+          by January 30, 2026. Enter the schools below in this order.
         </p>
 
         <div className="mt-8 rounded-2xl border border-rule p-5">
@@ -104,7 +103,7 @@ export default function ReviewPage() {
               }}
               className="h-9 px-3 rounded-full border border-rule text-[13px] hover:bg-rule/40"
             >
-              {copied ? "Copied ✓" : "Copy as text"}
+              {copied ? "Copied" : "Copy as text"}
             </button>
           </div>
           <ol className="flex flex-col gap-2">
@@ -137,25 +136,27 @@ export default function ReviewPage() {
         </div>
 
         <div className="mt-8 rounded-2xl bg-rule/30 p-5 flex flex-col gap-3 text-[14px] leading-[1.6]">
-          <h3 className="text-[16px] font-semibold">What happens next</h3>
+          <h3 className="text-[16px] font-semibold">What to expect next</h3>
           <ul className="flex flex-col gap-2 text-muted">
             <li>
-              <strong className="text-ink">Submit by January 30.</strong>{" "}
-              Late applications drop into Round 2 and have far worse odds.
+              <strong className="text-ink">January 30, 2026:</strong>{" "}
+              Main Round applications close. Applications submitted after this
+              date are processed in later rounds with reduced availability.
             </li>
             <li>
-              <strong className="text-ink">Results March 16.</strong> SFUSD
-              mails letters and posts to ParentVUE.
+              <strong className="text-ink">March 16, 2026:</strong>{" "}
+              SFUSD posts placement results to ParentVUE and mails letters.
             </li>
             <li>
-              <strong className="text-ink">Rank by true preference.</strong>{" "}
-              The algorithm is deferred acceptance — gaming the order doesn&rsquo;t
-              help. Tier balance is what matters.
+              <strong className="text-ink">Honest ranking is the
+              recommended strategy.</strong>{" "}
+              SFUSD uses a deferred acceptance algorithm. Ranking schools in
+              your true order of preference is the most effective approach.
             </li>
             <li>
-              <strong className="text-ink">Aftercare is separate.</strong>{" "}
-              Confirm wraparound care availability for any school you&rsquo;d
-              actually accept.
+              <strong className="text-ink">Aftercare:</strong>{" "}
+              Wraparound care is enrolled separately. Confirm availability
+              with each school you would accept.
             </li>
           </ul>
         </div>

@@ -18,8 +18,8 @@ export function computeNudges(
   if (total === 0) {
     out.push({
       kind: "tip",
-      title: "Start with safety",
-      body: "We've added the schools where you have the strongest claim. Add more from the map or search to round out a list of 15–18.",
+      title: "Getting started",
+      body: "Schools where you have the strongest claim are added automatically. Use the Add Schools button to build out a full ranking of 15 to 18.",
     });
     return out;
   }
@@ -27,56 +27,56 @@ export function computeNudges(
   if (total < 15)
     out.push({
       kind: "warn",
-      title: `Your list has ${total} schools.`,
-      body: "SFUSD recommends 15–18. Shorter lists mean more risk of being assigned outside your list entirely.",
+      title: `Your ranking currently lists ${total} ${total === 1 ? "school" : "schools"}.`,
+      body: "SFUSD recommends ranking 15 to 18 schools. Shorter rankings increase the chance of being assigned to a school not on your list.",
     });
   if (total > 18)
     out.push({
       kind: "tip",
-      title: `${total} schools is a lot.`,
-      body: "Trim to your true preferences. The algorithm rewards honest ranking — extras only matter if your top picks miss.",
+      title: `Your ranking lists ${total} schools.`,
+      body: "Consider removing any schools you would not accept. The assignment algorithm uses your ordering, so ranking schools you would decline can affect your outcome.",
     });
 
   if (counts.strong === 0)
     out.push({
       kind: "warn",
-      title: "No Strong shots in your list.",
-      body: "If none of your Likely or Stretch picks come through, you'll be placed somewhere off your list. Add 2–3 schools where you have an advantage — usually your attendance area and any sibling-linked schools.",
+      title: "No Likely placements in your ranking.",
+      body: "If none of your Possible or Competitive choices result in placement, you may be assigned to a school not on your list. Consider including schools where your tiebreakers apply, such as your attendance area or any sibling-linked schools.",
     });
 
   if (counts.stretch > 0 && counts.stretch >= counts.likely + counts.strong)
     out.push({
       kind: "warn",
-      title: "Your list is mostly Stretches.",
-      body: "Stretch schools are popular and most families miss. Balance with more Strong shots and Likelies.",
+      title: "Most of your ranking is Competitive.",
+      body: "Competitive schools have more applicants than seats. Adding Likely and Possible placements increases the chance of being assigned to a school you ranked.",
     });
 
   if (total >= 15 && counts.strong >= 3 && counts.likely >= 5)
     out.push({
       kind: "ok",
-      title: "Your list looks balanced.",
-      body: "Now rank by honest preference — don't strategize the order. The algorithm rewards honest ranking.",
+      title: "Your ranking is balanced.",
+      body: "Order your choices by your true preference. SFUSD uses a deferred acceptance algorithm, which is most effective when applicants rank schools honestly.",
     });
 
   if (!hasAA && grade !== "TK")
     out.push({
       kind: "tip",
-      title: "You haven't included your attendance area school.",
-      body: "Most families do — it's usually the single best chance at a guaranteed seat.",
+      title: "Attendance area school not included.",
+      body: "Most families include their attendance area elementary in their ranking. It is typically the strongest tiebreaker available.",
     });
 
   if (hasSibling)
     out.push({
       kind: "tip",
-      title: "Sibling priority is powerful.",
-      body: "Make sure your sibling's school is somewhere on your list. The sibling tiebreaker is strong but not absolute.",
+      title: "Sibling priority applies to your ranking.",
+      body: "Confirm your sibling's school is included if you want that school. Sibling priority is strong but not absolute when a school is oversubscribed.",
     });
 
   if (grade === "TK")
     out.push({
       kind: "tip",
-      title: "TK feeder = K guarantee.",
-      body: "If you accept TK at your AA Early Ed or elementary site, your child auto-promotes to K at the connected elementary. You don't reapply.",
+      title: "TK feeder note",
+      body: "For 2026-27, students who accept a TK placement automatically continue to Kindergarten at the connected elementary school. A separate Kindergarten application is not required.",
     });
 
   return out;
@@ -86,8 +86,8 @@ export default function Coach({ nudges }: { nudges: Nudge[] }) {
   if (!nudges.length) return null;
   return (
     <div className="flex flex-col gap-3">
-      <h3 className="text-[14px] font-semibold uppercase tracking-wide text-muted">
-        Coach
+      <h3 className="text-[12px] font-semibold uppercase tracking-wide text-muted">
+        Suggestions
       </h3>
       {nudges.map((n, i) => (
         <div
@@ -100,18 +100,9 @@ export default function Coach({ nudges }: { nudges: Nudge[] }) {
                 : "border-rule bg-paper"
           }`}
         >
-          <div className="flex gap-2 items-start">
-            <span aria-hidden className="text-[16px] leading-none mt-0.5">
-              {n.kind === "warn" ? "⚠️" : n.kind === "ok" ? "✓" : "💡"}
-            </span>
-            <div className="flex-1">
-              <div className="text-[14px] font-semibold text-ink">
-                {n.title}
-              </div>
-              <div className="text-[13px] text-muted leading-[1.55] mt-1">
-                {n.body}
-              </div>
-            </div>
+          <div className="text-[14px] font-semibold text-ink">{n.title}</div>
+          <div className="text-[13px] text-muted leading-[1.6] mt-1">
+            {n.body}
           </div>
         </div>
       ))}

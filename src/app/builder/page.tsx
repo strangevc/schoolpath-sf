@@ -188,13 +188,13 @@ export default function BuilderPage() {
               href="/start"
               className="text-[14px] text-muted hover:text-ink"
             >
-              Edit situation
+              Update your information
             </Link>
             <Link
               href="/review"
               className="h-10 px-4 rounded-full bg-ink text-paper text-[14px] font-medium flex items-center hover:opacity-90"
             >
-              Review &amp; submit →
+              Review your ranking
             </Link>
           </div>
         </header>
@@ -241,12 +241,13 @@ export default function BuilderPage() {
             {situation.grade === "TK" && prekSite && (
               <div className="rounded-2xl border border-strong/30 bg-strong-soft p-4">
                 <div className="text-[12px] uppercase tracking-wide text-strong font-semibold">
-                  TK feeder path
+                  TK feeder pattern
                 </div>
                 <div className="text-[13px] mt-2 leading-[1.55]">
-                  Your current Early Ed site feeds directly into the elementary
-                  school(s) listed in your TK programs. TK students
-                  auto-promote to K — no reapplication.
+                  Your current SFUSD site connects to one or more elementary
+                  schools through SFUSD&rsquo;s TK feeder pattern. Students
+                  who attend TK at the connected site automatically continue
+                  to Kindergarten at the assigned elementary.
                 </div>
               </div>
             )}
@@ -263,7 +264,7 @@ export default function BuilderPage() {
                   <span className="font-semibold text-ink">
                     {totalSchools}
                   </span>{" "}
-                  of 18 · SFUSD recommends 15–18
+                  of 18 schools. SFUSD recommends 15 to 18.
                 </div>
               </div>
               <CompositionBar counts={counts} />
@@ -311,7 +312,7 @@ export default function BuilderPage() {
                   })}
                   {!list.length && (
                     <div className="rounded-2xl border border-dashed border-rule p-8 text-center text-muted">
-                      Your list is empty. Tap “Add schools” to start.
+                      Your ranking is empty. Use Add Schools to begin.
                     </div>
                   )}
                 </div>
@@ -322,7 +323,7 @@ export default function BuilderPage() {
               onClick={() => setDrawerOpen(true)}
               className="self-start h-12 px-5 rounded-full border border-ink text-ink text-[15px] font-medium hover:bg-ink hover:text-paper transition-colors"
             >
-              + Add schools
+              Add schools
             </button>
           </div>
 

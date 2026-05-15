@@ -64,12 +64,12 @@ export function tierFromSuccess(pct: number | null): Tier {
 }
 
 const TIER_LABEL: Record<TierKey, string> = {
-  sibling: "you have a sibling here",
-  esaa: "this is your attendance area",
+  sibling: "you have a sibling enrolled here",
+  esaa: "this is your attendance area school",
   msf: "you have feeder priority",
-  ctip1: "you live in the CTIP1 advantage zone",
-  none: "no tiebreaker advantage",
-  all: "across all applicants",
+  ctip1: "your address is in a CTIP1 area",
+  none: "no tiebreakers apply",
+  all: "based on all applicants",
 };
 
 function fmtPct(p: number | null): string {
@@ -81,12 +81,12 @@ function plainPhrase(p: SchoolProgram, stats: TierStats, grade: Grade): string {
   const seats = stats.assigned;
   const reqs = stats.requests;
   const pctSuccess = stats.pctSuccess;
-  if (reqs === 0) return "Too few applications to estimate odds.";
+  if (reqs === 0) return "Too few past applicants to estimate placement.";
   const fam =
     pctSuccess !== null
-      ? `Families like you got in ${fmtPct(pctSuccess)} of the time.`
+      ? `Of applicants with your tiebreakers, ${fmtPct(pctSuccess)} were admitted.`
       : "";
-  return `${Math.round(reqs)} applied for about ${Math.round(seats || 0)} spots (${grade} ${p.pathway}). ${fam}`.trim();
+  return `${Math.round(reqs)} applied for about ${Math.round(seats || 0)} seats in this program (${grade} ${p.pathway}, 4-year average). ${fam}`.trim();
 }
 
 export function oddsFor(
@@ -144,19 +144,19 @@ function tierRank(t: Tier): number {
 
 export const TIER_COPY: Record<Tier, { label: string; sub: string }> = {
   strong: {
-    label: "Strong shot",
-    sub: "Most families like yours get a seat here.",
+    label: "Likely",
+    sub: "Most families with your tiebreakers have been admitted here.",
   },
   likely: {
-    label: "Likely",
-    sub: "Better than even odds for families like yours.",
+    label: "Possible",
+    sub: "About half of families in your situation have been admitted.",
   },
   stretch: {
-    label: "Stretch",
-    sub: "Popular — fewer than half of families like yours got in.",
+    label: "Competitive",
+    sub: "Demand exceeds available seats. Many applicants are not admitted.",
   },
   unknown: {
-    label: "Unknown",
-    sub: "Not enough data to estimate.",
+    label: "Not enough data",
+    sub: "Too few past applicants to estimate placement.",
   },
 };

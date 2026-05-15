@@ -73,7 +73,7 @@ export default function AddSchoolsDrawer({
           <div>
             <div className="text-[18px] font-semibold">Add schools</div>
             <div className="text-[13px] text-muted">
-              Sorted by your odds, strongest first.
+              Sorted by likelihood of placement for your situation.
             </div>
           </div>
           <button
@@ -97,13 +97,19 @@ export default function AddSchoolsDrawer({
               <button
                 key={t}
                 onClick={() => setTierFilter(t)}
-                className={`h-9 px-3 rounded-full border text-[13px] capitalize ${
+                className={`h-9 px-3 rounded-full border text-[13px] ${
                   tierFilter === t
                     ? "bg-ink text-paper border-ink"
                     : "border-rule hover:bg-rule/40"
                 }`}
               >
-                {t === "all" ? "All tiers" : t === "strong" ? "Strong shot" : t}
+                {t === "all"
+                  ? "All categories"
+                  : t === "strong"
+                    ? "Likely"
+                    : t === "likely"
+                      ? "Possible"
+                      : "Competitive"}
               </button>
             ))}
           </div>
@@ -146,14 +152,14 @@ export default function AddSchoolsDrawer({
                       : "bg-ink text-paper hover:opacity-90"
                   }`}
                 >
-                  {added ? "On your list" : "Add to list"}
+                  {added ? "Added" : "Add to ranking"}
                 </button>
               </div>
             );
           })}
           {!items.length && (
             <div className="text-[14px] text-muted py-8 text-center">
-              No schools match.
+              No schools match your filters.
             </div>
           )}
         </div>

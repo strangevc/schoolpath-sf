@@ -65,11 +65,11 @@ export default function SortableRow({
           </div>
           <TierBadge tier={odds.tier} size="sm" />
         </div>
-        <div className="text-[12px] text-muted mt-2 leading-[1.5]">
+        <div className="text-[12px] text-muted mt-2 leading-[1.55]">
           {odds.oddsPhrase}
         </div>
-        <div className="text-[11px] text-muted mt-1 italic">
-          Because {odds.why}.
+        <div className="text-[11px] text-muted mt-1">
+          Based on the tier for applicants where {odds.why}.
         </div>
       </div>
 
