@@ -70,19 +70,24 @@ export default function AddSchoolsDrawer({
 
   const items = useMemo(() => {
     const grade = situation.grade;
+    // Two-tier filter logic:
+    //   Always-applied: grade availability, search query, and the single
+    //   Category (tier) selector. These narrow the universe.
+    //   Match-any (OR): School type, Language program, Distance, Neighborhood.
+    //   When any of these filter groups are active, a school passes if it
+    //   matches at least one of the active groups. When none are set, all
+    //   schools pass.
+    const anyOptionalActive =
+      typeFilter.length > 0 ||
+      langFilter.length > 0 ||
+      neighborhoods.length > 0 ||
+      distFilter != null;
+
     return SCHOOLS.filter((s) => {
       const hasGrade =
         grade === "TK" ? s.tkPrograms.length > 0 : s.kPrograms.length > 0;
       if (!hasGrade) return false;
       if (q && !s.name.toLowerCase().includes(q.toLowerCase())) return false;
-      if (typeFilter.length && !typeFilter.includes(s.tags.schoolType))
-        return false;
-      if (langFilter.length) {
-        const overlap = s.tags.languages.some((l) => langFilter.includes(l));
-        if (!overlap) return false;
-      }
-      if (neighborhoods.length && !neighborhoods.includes(s.neighborhood || ""))
-        return false;
       return true;
     })
       .map((s) => {
@@ -91,8 +96,24 @@ export default function AddSchoolsDrawer({
         return { school: s, best, dist };
       })
       .filter((x) => x.best !== null)
-      .filter((x) => (tierFilter === "all" ? true : x.best!.odds.tier === tierFilter))
-      .filter((x) => (distFilter == null ? true : x.dist != null && x.dist <= distFilter))
+      .filter((x) =>
+        tierFilter === "all" ? true : x.best!.odds.tier === tierFilter
+      )
+      .filter((x) => {
+        if (!anyOptionalActive) return true;
+        const s = x.school;
+        const typeMatch =
+          typeFilter.length > 0 && typeFilter.includes(s.tags.schoolType);
+        const langMatch =
+          langFilter.length > 0 &&
+          s.tags.languages.some((l) => langFilter.includes(l));
+        const neighMatch =
+          neighborhoods.length > 0 &&
+          neighborhoods.includes(s.neighborhood || "");
+        const distMatch =
+          distFilter != null && x.dist != null && x.dist <= distFilter;
+        return typeMatch || langMatch || neighMatch || distMatch;
+      })
       .sort((a, b) => {
         const rank: Record<string, number> = {
           strong: 0,
@@ -250,6 +271,7 @@ export default function AddSchoolsDrawer({
                 summary={best!.odds.summary}
                 distanceMi={dist}
                 chips={chips}
+                sfusdUrl={school.sfusdUrl ?? null}
                 added={added}
                 onAdd={() =>
                   onAdd({

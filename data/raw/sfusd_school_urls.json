@@ -1,0 +1,632 @@
+[
+  {
+    "name": "A.P. Giannini Middle School",
+    "slug": "ap-giannini-middle-school",
+    "url": "https://www.sfusd.edu/school/ap-giannini-middle-school"
+  },
+  {
+    "name": "Abraham Lincoln High School",
+    "slug": "abraham-lincoln-high-school",
+    "url": "https://www.sfusd.edu/school/abraham-lincoln-high-school"
+  },
+  {
+    "name": "Access SFUSD: Bay Street",
+    "slug": "access-sfusd-bay-street",
+    "url": "https://www.sfusd.edu/school/access-sfusd-bay-street"
+  },
+  {
+    "name": "AccessSFUSD: The Arc",
+    "slug": "accesssfusd-arc",
+    "url": "https://www.sfusd.edu/school/accesssfusd-arc"
+  },
+  {
+    "name": "Alamo Elementary School",
+    "slug": "alamo-elementary-school",
+    "url": "https://www.sfusd.edu/school/alamo-elementary-school"
+  },
+  {
+    "name": "Alice Fong Yu Alternative School (K-8)",
+    "slug": "alice-fong-yu-alternative-school-k-8",
+    "url": "https://www.sfusd.edu/school/alice-fong-yu-alternative-school-k-8"
+  },
+  {
+    "name": "Alvarado Elementary School",
+    "slug": "alvarado-elementary-school",
+    "url": "https://www.sfusd.edu/school/alvarado-elementary-school"
+  },
+  {
+    "name": "Aptos Middle School",
+    "slug": "aptos-middle-school",
+    "url": "https://www.sfusd.edu/school/aptos-middle-school"
+  },
+  {
+    "name": "Argonne Early Education School",
+    "slug": "argonne-early-education-school",
+    "url": "https://www.sfusd.edu/school/argonne-early-education-school"
+  },
+  {
+    "name": "Argonne Elementary School",
+    "slug": "argonne-elementary-school",
+    "url": "https://www.sfusd.edu/school/argonne-elementary-school"
+  },
+  {
+    "name": "Balboa High School",
+    "slug": "balboa-high-school",
+    "url": "https://www.sfusd.edu/school/balboa-high-school"
+  },
+  {
+    "name": "Bessie Carmichael School PreK-8 Filipino Education Center",
+    "slug": "bessie-carmichael-school-prek-8-filipino-education-center",
+    "url": "https://www.sfusd.edu/school/bessie-carmichael-school-prek-8-filipino-education-center"
+  },
+  {
+    "name": "Bret Harte Elementary School",
+    "slug": "bret-harte-elementary-school",
+    "url": "https://www.sfusd.edu/school/bret-harte-elementary-school"
+  },
+  {
+    "name": "Bryant Elementary School",
+    "slug": "bryant-elementary-school",
+    "url": "https://www.sfusd.edu/school/bryant-elementary-school"
+  },
+  {
+    "name": "Buena Vista Horace Mann K-8 Community School",
+    "slug": "buena-vista-horace-mann-k-8-community-school",
+    "url": "https://www.sfusd.edu/school/buena-vista-horace-mann-k-8-community-school"
+  },
+  {
+    "name": "C.A.R.E. Bayview",
+    "slug": "care-bayview",
+    "url": "https://www.sfusd.edu/school/care-bayview"
+  },
+  {
+    "name": "C.A.R.E. Buchanan",
+    "slug": "care-buchanan",
+    "url": "https://www.sfusd.edu/school/care-buchanan"
+  },
+  {
+    "name": "C.A.R.E. Middle School",
+    "slug": "care-middle-school",
+    "url": "https://www.sfusd.edu/school/care-middle-school"
+  },
+  {
+    "name": "César Chávez Elementary School",
+    "slug": "cesar-chavez-elementary-school",
+    "url": "https://www.sfusd.edu/school/cesar-chavez-elementary-school"
+  },
+  {
+    "name": "Chinese Immersion School at De Avila 中文沉浸學校",
+    "slug": "chinese-immersion-school-de-avila-zhongwenchenjinxuexiao",
+    "url": "https://www.sfusd.edu/school/chinese-immersion-school-de-avila-zhongwenchenjinxuexiao"
+  },
+  {
+    "name": "Civic Center Secondary School",
+    "slug": "civic-center-secondary-school",
+    "url": "https://www.sfusd.edu/school/civic-center-secondary-school"
+  },
+  {
+    "name": "Claire Lilienthal Alternative School (K-2 Madison Campus)",
+    "slug": "claire-lilienthal-alternative-school-k-2-madison-campus",
+    "url": "https://www.sfusd.edu/school/claire-lilienthal-alternative-school-k-2-madison-campus"
+  },
+  {
+    "name": "Claire Lilienthal Alternative School K-8",
+    "slug": "claire-lilienthal-alternative-school-k-8",
+    "url": "https://www.sfusd.edu/school/claire-lilienthal-alternative-school-k-8"
+  },
+  {
+    "name": "Clarendon Alternative Elementary School",
+    "slug": "clarendon-alternative-elementary-school",
+    "url": "https://www.sfusd.edu/school/clarendon-alternative-elementary-school"
+  },
+  {
+    "name": "Cleveland Elementary School",
+    "slug": "cleveland-elementary-school",
+    "url": "https://www.sfusd.edu/school/cleveland-elementary-school"
+  },
+  {
+    "name": "Commodore Sloat Elementary School",
+    "slug": "commodore-sloat-elementary-school",
+    "url": "https://www.sfusd.edu/school/commodore-sloat-elementary-school"
+  },
+  {
+    "name": "Commodore Stockton Early Education School",
+    "slug": "commodore-stockton-early-education-school",
+    "url": "https://www.sfusd.edu/school/commodore-stockton-early-education-school"
+  },
+  {
+    "name": "Daniel Webster Elementary School",
+    "slug": "daniel-webster-elementary-school",
+    "url": "https://www.sfusd.edu/school/daniel-webster-elementary-school"
+  },
+  {
+    "name": "Dianne Feinstein Elementary School",
+    "slug": "dianne-feinstein-elementary-school",
+    "url": "https://www.sfusd.edu/school/dianne-feinstein-elementary-school"
+  },
+  {
+    "name": "Dolores Huerta Elementary School",
+    "slug": "dolores-huerta-elementary-school",
+    "url": "https://www.sfusd.edu/school/dolores-huerta-elementary-school"
+  },
+  {
+    "name": "Downtown High School",
+    "slug": "downtown-high-school",
+    "url": "https://www.sfusd.edu/school/downtown-high-school"
+  },
+  {
+    "name": "Dr. Charles R. Drew College Preparatory Academy",
+    "slug": "dr-charles-r-drew-college-preparatory-academy",
+    "url": "https://www.sfusd.edu/school/dr-charles-r-drew-college-preparatory-academy"
+  },
+  {
+    "name": "Dr. George Washington Carver Elementary School",
+    "slug": "dr-george-washington-carver-elementary-school",
+    "url": "https://www.sfusd.edu/school/dr-george-washington-carver-elementary-school"
+  },
+  {
+    "name": "Dr. Martin Luther King, Jr. Academic Middle School",
+    "slug": "dr-martin-luther-king-jr-academic-middle-school",
+    "url": "https://www.sfusd.edu/school/dr-martin-luther-king-jr-academic-middle-school"
+  },
+  {
+    "name": "Dr. William L. Cobb Elementary School",
+    "slug": "dr-william-l-cobb-elementary-school",
+    "url": "https://www.sfusd.edu/school/dr-william-l-cobb-elementary-school"
+  },
+  {
+    "name": "E.R. Taylor Elementary School",
+    "slug": "er-taylor-elementary-school",
+    "url": "https://www.sfusd.edu/school/er-taylor-elementary-school"
+  },
+  {
+    "name": "Edwin and Anita Lee Newcomer School 李孟賢伉儷新移民學校",
+    "slug": "edwin-and-anita-lee-newcomer-school-limengxiankanglixinyiminxuexiao",
+    "url": "https://www.sfusd.edu/school/edwin-and-anita-lee-newcomer-school-limengxiankanglixinyiminxuexiao"
+  },
+  {
+    "name": "El Dorado Elementary School",
+    "slug": "el-dorado-elementary-school",
+    "url": "https://www.sfusd.edu/school/el-dorado-elementary-school"
+  },
+  {
+    "name": "Everett Middle School",
+    "slug": "everett-middle-school",
+    "url": "https://www.sfusd.edu/school/everett-middle-school"
+  },
+  {
+    "name": "Francis Scott Key Elementary School",
+    "slug": "francis-scott-key-elementary-school",
+    "url": "https://www.sfusd.edu/school/francis-scott-key-elementary-school"
+  },
+  {
+    "name": "Francisco Middle School",
+    "slug": "francisco-middle-school",
+    "url": "https://www.sfusd.edu/school/francisco-middle-school"
+  },
+  {
+    "name": "Galileo Academy of Science &amp; Technology",
+    "slug": "galileo-academy-science-technology",
+    "url": "https://www.sfusd.edu/school/galileo-academy-science-technology"
+  },
+  {
+    "name": "Garfield Elementary School",
+    "slug": "garfield-elementary-school",
+    "url": "https://www.sfusd.edu/school/garfield-elementary-school"
+  },
+  {
+    "name": "George Peabody Elementary School",
+    "slug": "george-peabody-elementary-school",
+    "url": "https://www.sfusd.edu/school/george-peabody-elementary-school"
+  },
+  {
+    "name": "George R. Moscone Elementary School",
+    "slug": "george-r-moscone-elementary-school",
+    "url": "https://www.sfusd.edu/school/george-r-moscone-elementary-school"
+  },
+  {
+    "name": "George Washington High School",
+    "slug": "george-washington-high-school",
+    "url": "https://www.sfusd.edu/school/george-washington-high-school"
+  },
+  {
+    "name": "Glen Park Elementary School",
+    "slug": "glen-park-elementary-school",
+    "url": "https://www.sfusd.edu/school/glen-park-elementary-school"
+  },
+  {
+    "name": "Gordon J. Lau Elementary School 劉貴明小學",
+    "slug": "gordon-j-lau-elementary-school",
+    "url": "https://www.sfusd.edu/school/gordon-j-lau-elementary-school"
+  },
+  {
+    "name": "Grattan Elementary School",
+    "slug": "grattan-elementary-school",
+    "url": "https://www.sfusd.edu/school/grattan-elementary-school"
+  },
+  {
+    "name": "Guadalupe Elementary School",
+    "slug": "guadalupe-elementary-school",
+    "url": "https://www.sfusd.edu/school/guadalupe-elementary-school"
+  },
+  {
+    "name": "Harvey Milk Civil Rights Academy",
+    "slug": "harvey-milk-civil-rights-academy",
+    "url": "https://www.sfusd.edu/school/harvey-milk-civil-rights-academy"
+  },
+  {
+    "name": "Herbert Hoover Middle School",
+    "slug": "herbert-hoover-middle-school",
+    "url": "https://www.sfusd.edu/school/herbert-hoover-middle-school"
+  },
+  {
+    "name": "Hillcrest Elementary School",
+    "slug": "hillcrest-elementary-school",
+    "url": "https://www.sfusd.edu/school/hillcrest-elementary-school"
+  },
+  {
+    "name": "Hilltop + El Camino Alternativo Schools",
+    "slug": "hilltop-el-camino-alternativo-schools",
+    "url": "https://www.sfusd.edu/school/hilltop-el-camino-alternativo-schools"
+  },
+  {
+    "name": "Ida B. Wells High School",
+    "slug": "ida-b-wells-high-school",
+    "url": "https://www.sfusd.edu/school/ida-b-wells-high-school"
+  },
+  {
+    "name": "Independence High School",
+    "slug": "independence-high-school",
+    "url": "https://www.sfusd.edu/school/independence-high-school"
+  },
+  {
+    "name": "James Denman Middle School",
+    "slug": "james-denman-middle-school",
+    "url": "https://www.sfusd.edu/school/james-denman-middle-school"
+  },
+  {
+    "name": "James Lick Middle School",
+    "slug": "james-lick-middle-school",
+    "url": "https://www.sfusd.edu/school/james-lick-middle-school"
+  },
+  {
+    "name": "Jean Parker Elementary School",
+    "slug": "jean-parker-elementary-school",
+    "url": "https://www.sfusd.edu/school/jean-parker-elementary-school"
+  },
+  {
+    "name": "Jefferson Early Education School",
+    "slug": "jefferson-early-education-school",
+    "url": "https://www.sfusd.edu/school/jefferson-early-education-school"
+  },
+  {
+    "name": "Jefferson Elementary School",
+    "slug": "jefferson-elementary-school",
+    "url": "https://www.sfusd.edu/school/jefferson-elementary-school"
+  },
+  {
+    "name": "John McLaren Early Education School",
+    "slug": "john-mclaren-early-education-school",
+    "url": "https://www.sfusd.edu/school/john-mclaren-early-education-school"
+  },
+  {
+    "name": "John Muir Elementary School",
+    "slug": "john-muir-elementary-school",
+    "url": "https://www.sfusd.edu/school/john-muir-elementary-school"
+  },
+  {
+    "name": "John O&#039;Connell High School",
+    "slug": "john-oconnell-high-school",
+    "url": "https://www.sfusd.edu/school/john-oconnell-high-school"
+  },
+  {
+    "name": "John Yehall Chin Elementary School",
+    "slug": "john-yehall-chin-elementary-school",
+    "url": "https://www.sfusd.edu/school/john-yehall-chin-elementary-school"
+  },
+  {
+    "name": "Jose Ortega Elementary School",
+    "slug": "jose-ortega-elementary-school",
+    "url": "https://www.sfusd.edu/school/jose-ortega-elementary-school"
+  },
+  {
+    "name": "June Jordan School for Equity",
+    "slug": "june-jordan-school-equity",
+    "url": "https://www.sfusd.edu/school/june-jordan-school-equity"
+  },
+  {
+    "name": "Junipero Serra Annex Early Education School",
+    "slug": "junipero-serra-annex-early-education-school",
+    "url": "https://www.sfusd.edu/school/junipero-serra-annex-early-education-school"
+  },
+  {
+    "name": "Junipero Serra Elementary School",
+    "slug": "junipero-serra-elementary-school",
+    "url": "https://www.sfusd.edu/school/junipero-serra-elementary-school"
+  },
+  {
+    "name": "Lafayette Elementary School",
+    "slug": "lafayette-elementary-school",
+    "url": "https://www.sfusd.edu/school/lafayette-elementary-school"
+  },
+  {
+    "name": "Lakeshore Alternative Elementary School",
+    "slug": "lakeshore-alternative-elementary-school",
+    "url": "https://www.sfusd.edu/school/lakeshore-alternative-elementary-school"
+  },
+  {
+    "name": "Lawton Alternative School (K-8)",
+    "slug": "lawton-alternative-school-k-8",
+    "url": "https://www.sfusd.edu/school/lawton-alternative-school-k-8"
+  },
+  {
+    "name": "Leola M. Havard Early Education School",
+    "slug": "leola-m-havard-early-education-school",
+    "url": "https://www.sfusd.edu/school/leola-m-havard-early-education-school"
+  },
+  {
+    "name": "Leonard R. Flynn Elementary School",
+    "slug": "leonard-r-flynn-elementary-school",
+    "url": "https://www.sfusd.edu/school/leonard-r-flynn-elementary-school"
+  },
+  {
+    "name": "Longfellow Elementary School",
+    "slug": "longfellow-elementary-school",
+    "url": "https://www.sfusd.edu/school/longfellow-elementary-school"
+  },
+  {
+    "name": "Lowell High School",
+    "slug": "lowell-high-school",
+    "url": "https://www.sfusd.edu/school/lowell-high-school"
+  },
+  {
+    "name": "Malcolm X Academy Elementary School",
+    "slug": "malcolm-x-academy-elementary-school",
+    "url": "https://www.sfusd.edu/school/malcolm-x-academy-elementary-school"
+  },
+  {
+    "name": "Marina Middle School",
+    "slug": "marina-middle-school",
+    "url": "https://www.sfusd.edu/school/marina-middle-school"
+  },
+  {
+    "name": "Marshall Elementary School",
+    "slug": "marshall-elementary-school",
+    "url": "https://www.sfusd.edu/school/marshall-elementary-school"
+  },
+  {
+    "name": "McKinley Elementary School",
+    "slug": "mckinley-elementary-school",
+    "url": "https://www.sfusd.edu/school/mckinley-elementary-school"
+  },
+  {
+    "name": "Miraloma Elementary School",
+    "slug": "miraloma-elementary-school",
+    "url": "https://www.sfusd.edu/school/miraloma-elementary-school"
+  },
+  {
+    "name": "Mission Bay School",
+    "slug": "mission-bay-school",
+    "url": "https://www.sfusd.edu/school/mission-bay-school"
+  },
+  {
+    "name": "Mission Education Center",
+    "slug": "mission-education-center",
+    "url": "https://www.sfusd.edu/school/mission-education-center"
+  },
+  {
+    "name": "Mission High School",
+    "slug": "mission-high-school",
+    "url": "https://www.sfusd.edu/school/mission-high-school"
+  },
+  {
+    "name": "Monroe Elementary School",
+    "slug": "monroe-elementary-school",
+    "url": "https://www.sfusd.edu/school/monroe-elementary-school"
+  },
+  {
+    "name": "New Traditions Creative Arts Elementary School",
+    "slug": "new-traditions-creative-arts-elementary-school",
+    "url": "https://www.sfusd.edu/school/new-traditions-creative-arts-elementary-school"
+  },
+  {
+    "name": "Noriega Early Education School",
+    "slug": "noriega-early-education-school",
+    "url": "https://www.sfusd.edu/school/noriega-early-education-school"
+  },
+  {
+    "name": "Paul Revere (PreK-8) School",
+    "slug": "paul-revere-prek-8-school",
+    "url": "https://www.sfusd.edu/school/paul-revere-prek-8-school"
+  },
+  {
+    "name": "Phillip and Sala Burton Academic High School",
+    "slug": "phillip-and-sala-burton-academic-high-school",
+    "url": "https://www.sfusd.edu/school/phillip-and-sala-burton-academic-high-school"
+  },
+  {
+    "name": "Presidio Middle School",
+    "slug": "presidio-middle-school",
+    "url": "https://www.sfusd.edu/school/presidio-middle-school"
+  },
+  {
+    "name": "Project Search",
+    "slug": "project-search",
+    "url": "https://www.sfusd.edu/school/project-search"
+  },
+  {
+    "name": "Raoul Wallenberg High School",
+    "slug": "raoul-wallenberg-high-school",
+    "url": "https://www.sfusd.edu/school/raoul-wallenberg-high-school"
+  },
+  {
+    "name": "Raphael Weill Early Education School",
+    "slug": "raphael-weill-early-education-school",
+    "url": "https://www.sfusd.edu/school/raphael-weill-early-education-school"
+  },
+  {
+    "name": "Redding Elementary School",
+    "slug": "redding-elementary-school",
+    "url": "https://www.sfusd.edu/school/redding-elementary-school"
+  },
+  {
+    "name": "Robert Louis Stevenson Elementary School",
+    "slug": "robert-louis-stevenson-elementary-school",
+    "url": "https://www.sfusd.edu/school/robert-louis-stevenson-elementary-school"
+  },
+  {
+    "name": "Rooftop School TK-8",
+    "slug": "rooftop-school-tk-8",
+    "url": "https://www.sfusd.edu/school/rooftop-school-tk-8"
+  },
+  {
+    "name": "Rooftop TK-8 School - Mayeda Campus",
+    "slug": "rooftop-tk-8-school-mayeda-campus",
+    "url": "https://www.sfusd.edu/school/rooftop-tk-8-school-mayeda-campus"
+  },
+  {
+    "name": "Roosevelt Middle School",
+    "slug": "roosevelt-middle-school",
+    "url": "https://www.sfusd.edu/school/roosevelt-middle-school"
+  },
+  {
+    "name": "Rosa Parks Elementary School",
+    "slug": "rosa-parks-elementary-school",
+    "url": "https://www.sfusd.edu/school/rosa-parks-elementary-school"
+  },
+  {
+    "name": "Ruth Asawa San Francisco School of the Arts",
+    "slug": "ruth-asawa-san-francisco-school-arts",
+    "url": "https://www.sfusd.edu/school/ruth-asawa-san-francisco-school-arts"
+  },
+  {
+    "name": "San Francisco Community School",
+    "slug": "san-francisco-community-school",
+    "url": "https://www.sfusd.edu/school/san-francisco-community-school"
+  },
+  {
+    "name": "San Francisco International High School",
+    "slug": "san-francisco-international-high-school",
+    "url": "https://www.sfusd.edu/school/san-francisco-international-high-school"
+  },
+  {
+    "name": "San Francisco Public Montessori",
+    "slug": "san-francisco-public-montessori",
+    "url": "https://www.sfusd.edu/school/san-francisco-public-montessori"
+  },
+  {
+    "name": "San Miguel Early Education School",
+    "slug": "san-miguel-early-education-school",
+    "url": "https://www.sfusd.edu/school/san-miguel-early-education-school"
+  },
+  {
+    "name": "Sanchez Elementary School",
+    "slug": "sanchez-elementary-school",
+    "url": "https://www.sfusd.edu/school/sanchez-elementary-school"
+  },
+  {
+    "name": "Sheridan Elementary School",
+    "slug": "sheridan-elementary-school",
+    "url": "https://www.sfusd.edu/school/sheridan-elementary-school"
+  },
+  {
+    "name": "Sherman Elementary School",
+    "slug": "sherman-elementary-school",
+    "url": "https://www.sfusd.edu/school/sherman-elementary-school"
+  },
+  {
+    "name": "Spring Valley Science Elementary School",
+    "slug": "spring-valley-science-elementary-school",
+    "url": "https://www.sfusd.edu/school/spring-valley-science-elementary-school"
+  },
+  {
+    "name": "Starr King Elementary School",
+    "slug": "starr-king-elementary-school",
+    "url": "https://www.sfusd.edu/school/starr-king-elementary-school"
+  },
+  {
+    "name": "Sunnyside Elementary School",
+    "slug": "sunnyside-elementary-school",
+    "url": "https://www.sfusd.edu/school/sunnyside-elementary-school"
+  },
+  {
+    "name": "Sunset Elementary School",
+    "slug": "sunset-elementary-school",
+    "url": "https://www.sfusd.edu/school/sunset-elementary-school"
+  },
+  {
+    "name": "Sutro Elementary School",
+    "slug": "sutro-elementary-school",
+    "url": "https://www.sfusd.edu/school/sutro-elementary-school"
+  },
+  {
+    "name": "Tenderloin Community Elementary School",
+    "slug": "tenderloin-community-elementary-school",
+    "url": "https://www.sfusd.edu/school/tenderloin-community-elementary-school"
+  },
+  {
+    "name": "The Academy - San Francisco @ McAteer",
+    "slug": "academy-san-francisco-mcateer",
+    "url": "https://www.sfusd.edu/school/academy-san-francisco-mcateer"
+  },
+  {
+    "name": "Theresa S. Mahler Early Education School",
+    "slug": "theresa-s-mahler-early-education-school",
+    "url": "https://www.sfusd.edu/school/theresa-s-mahler-early-education-school"
+  },
+  {
+    "name": "Thurgood Marshall Academic High School",
+    "slug": "thurgood-marshall-academic-high-school",
+    "url": "https://www.sfusd.edu/school/thurgood-marshall-academic-high-school"
+  },
+  {
+    "name": "Tule Elk Park Early Education School",
+    "slug": "tule-elk-park-early-education-school",
+    "url": "https://www.sfusd.edu/school/tule-elk-park-early-education-school"
+  },
+  {
+    "name": "Ulloa Elementary School",
+    "slug": "ulloa-elementary-school",
+    "url": "https://www.sfusd.edu/school/ulloa-elementary-school"
+  },
+  {
+    "name": "Visitacion Valley Elementary School",
+    "slug": "visitacion-valley-elementary-school",
+    "url": "https://www.sfusd.edu/school/visitacion-valley-elementary-school"
+  },
+  {
+    "name": "Visitacion Valley Middle School",
+    "slug": "visitacion-valley-middle-school",
+    "url": "https://www.sfusd.edu/school/visitacion-valley-middle-school"
+  },
+  {
+    "name": "West Portal Elementary School",
+    "slug": "west-portal-elementary-school",
+    "url": "https://www.sfusd.edu/school/west-portal-elementary-school"
+  },
+  {
+    "name": "Willie L. Brown Jr. Middle School",
+    "slug": "willie-l-brown-jr-middle-school",
+    "url": "https://www.sfusd.edu/school/willie-l-brown-jr-middle-school"
+  },
+  {
+    "name": "Woodside Learning Center",
+    "slug": "woodside-learning-center",
+    "url": "https://www.sfusd.edu/school/woodside-learning-center"
+  },
+  {
+    "name": "Yick Wo Alternative Elementary School",
+    "slug": "yick-wo-alternative-elementary-school",
+    "url": "https://www.sfusd.edu/school/yick-wo-alternative-elementary-school"
+  },
+  {
+    "name": "Youth Chance High School",
+    "slug": "youth-chance-high-school",
+    "url": "https://www.sfusd.edu/school/youth-chance-high-school"
+  },
+  {
+    "name": "Zaida T. Rodriguez Early Education School",
+    "slug": "zaida-t-rodriguez-early-education-school",
+    "url": "https://www.sfusd.edu/school/zaida-t-rodriguez-early-education-school"
+  }
+]

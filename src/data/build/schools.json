@@ -1134,7 +1134,8 @@
     "address": "250 23rd Ave., San Francisco, CA 94121-2009",
     "neighborhood": "Outer Richmond",
     "website": "No Data",
-    "phone": "(415) 750-8456"
+    "phone": "(415) 750-8456",
+    "sfusdUrl": "https://www.sfusd.edu/school/alamo-elementary-school"
   },
   {
     "idSchool": 420,
@@ -3118,7 +3119,8 @@
     "address": "625 Douglas St., San Francisco, CA 94114-3140",
     "neighborhood": "Noe Valley",
     "website": "No Data",
-    "phone": "(415) 695-5695"
+    "phone": "(415) 695-5695",
+    "sfusdUrl": "https://www.sfusd.edu/school/alvarado-elementary-school"
   },
   {
     "idSchool": 903,
@@ -3550,7 +3552,8 @@
     "address": "680 18th Ave., San Francisco, CA 94121-3818",
     "neighborhood": "Outer Richmond",
     "website": "No Data",
-    "phone": "(415) 750-8460"
+    "phone": "(415) 750-8460",
+    "sfusdUrl": "https://www.sfusd.edu/school/argonne-early-education-school"
   },
   {
     "idSchool": 435,
@@ -4730,7 +4733,8 @@
     "address": "680 18th Ave., San Francisco, CA 94121-3818",
     "neighborhood": "Outer Richmond",
     "website": "No Data",
-    "phone": "(415) 750-8460"
+    "phone": "(415) 750-8460",
+    "sfusdUrl": "https://www.sfusd.edu/school/argonne-early-education-school"
   },
   {
     "idSchool": 456,
@@ -5646,7 +5650,8 @@
     "address": "2641 25th St., San Francisco, CA 94110-3514",
     "neighborhood": "Mission",
     "website": "No Data",
-    "phone": "(415) 695-5780"
+    "phone": "(415) 695-5780",
+    "sfusdUrl": "https://www.sfusd.edu/school/bryant-elementary-school"
   },
   {
     "idSchool": 618,
@@ -6452,7 +6457,8 @@
         "Mild to Moderate (SDC)"
       ],
       "hasGeneralEd": false
-    }
+    },
+    "sfusdUrl": "https://www.sfusd.edu/school/buena-vista-horace-mann-k-8-community-school"
   },
   {
     "idSchool": 449,
@@ -7208,7 +7214,8 @@
     "address": "375 Seventh St., San Francisco, CA 94103-4020",
     "neighborhood": "South of Market",
     "website": "No Data",
-    "phone": "(415) 355-6916"
+    "phone": "(415) 355-6916",
+    "sfusdUrl": "https://www.sfusd.edu/school/bessie-carmichael-school-prek-8-filipino-education-center"
   },
   {
     "idSchool": 625,
@@ -7717,7 +7724,8 @@
     "address": "1360 Oakdale Ave., San Francisco, CA 94124-2724",
     "neighborhood": "Bayview Hunters Point",
     "website": "No Data",
-    "phone": "(415) 330-1540"
+    "phone": "(415) 330-1540",
+    "sfusdUrl": "https://www.sfusd.edu/school/dr-george-washington-carver-elementary-school"
   },
   {
     "idSchool": 603,
@@ -8745,7 +8753,8 @@
     "address": "825 Shotwell St., San Francisco, CA 94110-3212",
     "neighborhood": "Mission",
     "website": "No Data",
-    "phone": "(415) 695-5765"
+    "phone": "(415) 695-5765",
+    "sfusdUrl": "https://www.sfusd.edu/school/cesar-chavez-elementary-school"
   },
   {
     "idSchool": 872,
@@ -9144,7 +9153,8 @@
     "address": "350 Broadway St., San Francisco, CA 94133-4503",
     "neighborhood": "North Beach",
     "website": "No Data",
-    "phone": "(415) 291-7946"
+    "phone": "(415) 291-7946",
+    "sfusdUrl": "https://www.sfusd.edu/school/john-yehall-chin-elementary-school"
   },
   {
     "idSchool": 509,
@@ -10409,7 +10419,8 @@
     "address": "1250 Waller St., San Francisco, CA 94117-2919",
     "neighborhood": "Haight Ashbury",
     "website": "www.sfusd.edu",
-    "phone": "(415) 241-6325"
+    "phone": "(415) 241-6325",
+    "sfusdUrl": "https://www.sfusd.edu/school/chinese-immersion-school-de-avila-zhongwenchenjinxuexiao"
   },
   {
     "idSchool": 478,
@@ -12230,7 +12241,8 @@
     "address": "500 Clarendon Ave., San Francisco, CA 94131-1113",
     "neighborhood": "Inner Sunset",
     "website": "No Data",
-    "phone": "(415) 759-2796"
+    "phone": "(415) 759-2796",
+    "sfusdUrl": "https://www.sfusd.edu/school/clarendon-alternative-elementary-school"
   },
   {
     "idSchool": 481,
@@ -12740,7 +12752,8 @@
     "address": "455 Athens St., San Francisco, CA 94112-2801",
     "neighborhood": "Excelsior",
     "website": "No Data",
-    "phone": "(415) 469-4709"
+    "phone": "(415) 469-4709",
+    "sfusdUrl": "https://www.sfusd.edu/school/cleveland-elementary-school"
   },
   {
     "idSchool": 525,
@@ -13601,7 +13614,8 @@
     "address": "2725 California St., San Francisco, CA 94115-2513",
     "neighborhood": "Pacific Heights",
     "website": "No Data",
-    "phone": "(415) 749-3505"
+    "phone": "(415) 749-3505",
+    "sfusdUrl": "https://www.sfusd.edu/school/dr-william-l-cobb-elementary-school"
   },
   {
     "idSchool": 507,
@@ -14190,7 +14204,8 @@
     "address": "50 Pomona Ave., San Francisco, CA 94124-2344",
     "neighborhood": "Bayview Hunters Point",
     "website": "No Data",
-    "phone": "(415) 330-1526"
+    "phone": "(415) 330-1526",
+    "sfusdUrl": "https://www.sfusd.edu/school/dr-charles-r-drew-college-preparatory-academy"
   },
   {
     "idSchool": 521,
@@ -14967,7 +14982,8 @@
     "address": "70 Delta St., San Francisco, CA 94134-2145",
     "neighborhood": "McLaren Park",
     "website": "No Data",
-    "phone": "(415) 330-1537"
+    "phone": "(415) 330-1537",
+    "sfusdUrl": "https://www.sfusd.edu/school/el-dorado-elementary-school"
   },
   {
     "idSchool": 539,
@@ -15980,7 +15996,8 @@
     "address": "2550 25th Ave., San Francisco, CA 94116-2901",
     "neighborhood": "Sunset/Parkside",
     "website": "No Data",
-    "phone": "(415) 615-8460"
+    "phone": "(415) 615-8460",
+    "sfusdUrl": "https://www.sfusd.edu/school/dianne-feinstein-elementary-school"
   },
   {
     "idSchool": 680,
@@ -18151,7 +18168,8 @@
     "address": "3125 Cesar Chavez St., San Francisco, CA 94110-4722",
     "neighborhood": "Bernal Heights",
     "website": "No Data",
-    "phone": "(415) 695-5770"
+    "phone": "(415) 695-5770",
+    "sfusdUrl": "https://www.sfusd.edu/school/leonard-r-flynn-elementary-school"
   },
   {
     "idSchool": 562,
@@ -19471,7 +19489,8 @@
     "address": "420 Filbert St., San Francisco, CA 94133-3002",
     "neighborhood": "North Beach",
     "website": "No Data",
-    "phone": "(415) 291-7924"
+    "phone": "(415) 291-7924",
+    "sfusdUrl": "https://www.sfusd.edu/school/garfield-elementary-school"
   },
   {
     "idSchool": 575,
@@ -20420,7 +20439,8 @@
     "address": "151 Lippard Ave., San Francisco, CA 94131-3249",
     "neighborhood": "West of Twin Peaks",
     "website": "No Data",
-    "phone": "(415) 469-4713"
+    "phone": "(415) 469-4713",
+    "sfusdUrl": "https://www.sfusd.edu/school/glen-park-elementary-school"
   },
   {
     "idSchool": 589,
@@ -21565,7 +21585,8 @@
     "address": "165 Grattan St., San Francisco, CA 94117-4208",
     "neighborhood": "Haight Ashbury",
     "website": "No Data",
-    "phone": "(415) 759-2815"
+    "phone": "(415) 759-2815",
+    "sfusdUrl": "https://www.sfusd.edu/school/grattan-elementary-school"
   },
   {
     "idSchool": 593,
@@ -22441,7 +22462,8 @@
     "address": "859 Prague St., San Francisco, CA 94112-4516",
     "neighborhood": "Excelsior",
     "website": "No Data",
-    "phone": "(415) 469-4718"
+    "phone": "(415) 469-4718",
+    "sfusdUrl": "https://www.sfusd.edu/school/guadalupe-elementary-school"
   },
   {
     "idSchool": 453,
@@ -23306,7 +23328,8 @@
     "address": "1035 Gilman Ave., San Francisco, CA 94124-3710",
     "neighborhood": "Bayview Hunters Point",
     "website": "No Data",
-    "phone": "(415) 330-1520"
+    "phone": "(415) 330-1520",
+    "sfusdUrl": "https://www.sfusd.edu/school/bret-harte-elementary-school"
   },
   {
     "idSchool": 614,
@@ -24450,7 +24473,8 @@
     "address": "810 Silver Ave., San Francisco, CA 94134-1012",
     "neighborhood": "Excelsior",
     "website": "No Data",
-    "phone": "(415) 469-4722"
+    "phone": "(415) 469-4722",
+    "sfusdUrl": "https://www.sfusd.edu/school/hillcrest-elementary-school"
   },
   {
     "idSchool": 537,
@@ -25967,7 +25991,8 @@
     "address": "65 Chenery St., San Francisco, CA 94131-2706",
     "neighborhood": "Glen Park",
     "website": "No Data",
-    "phone": "(415) 695-5669"
+    "phone": "(415) 695-5669",
+    "sfusdUrl": "https://www.sfusd.edu/school/dolores-huerta-elementary-school"
   },
   {
     "idSchool": 644,
@@ -26677,7 +26702,8 @@
     "address": "1725 Irving St., San Francisco, CA 94122-1893",
     "neighborhood": "Inner Sunset",
     "website": "No Data",
-    "phone": "(415) 759-2821"
+    "phone": "(415) 759-2821",
+    "sfusdUrl": "https://www.sfusd.edu/school/jefferson-early-education-school"
   },
   {
     "idSchool": 544,
@@ -27830,7 +27856,8 @@
     "address": "1530 43rd Ave., San Francisco, CA 94122-2925",
     "neighborhood": "Sunset/Parkside",
     "website": "No Data",
-    "phone": "(415) 759-2811"
+    "phone": "(415) 759-2811",
+    "sfusdUrl": "https://www.sfusd.edu/school/francis-scott-key-elementary-school"
   },
   {
     "idSchool": 838,
@@ -29571,7 +29598,8 @@
     "address": "1215 Carolina St., San Francisco, CA 94107-3322",
     "neighborhood": "Potrero Hill",
     "website": "No Data",
-    "phone": "(415) 695-5797"
+    "phone": "(415) 695-5797",
+    "sfusdUrl": "https://www.sfusd.edu/school/starr-king-elementary-school"
   },
   {
     "idSchool": 664,
@@ -30595,7 +30623,8 @@
     "address": "4545 Anza St., San Francisco, CA 94121-2621",
     "neighborhood": "Outer Richmond",
     "website": "No Data",
-    "phone": "(415) 750-8483"
+    "phone": "(415) 750-8483",
+    "sfusdUrl": "https://www.sfusd.edu/school/lafayette-elementary-school"
   },
   {
     "idSchool": 670,
@@ -31860,7 +31889,8 @@
     "address": "220 Middlefield Dr., San Francisco, CA 94132-1418",
     "neighborhood": "Lakeshore",
     "website": "No Data",
-    "phone": "(415) 759-2825"
+    "phone": "(415) 759-2825",
+    "sfusdUrl": "https://www.sfusd.edu/school/lakeshore-alternative-elementary-school"
   },
   {
     "idSchool": 490,
@@ -32960,7 +32990,8 @@
     "address": "950 Clay St., San Francisco, CA 94108-1521",
     "neighborhood": "Chinatown",
     "website": "No Data",
-    "phone": "(415) 291-7921"
+    "phone": "(415) 291-7921",
+    "sfusdUrl": "https://www.sfusd.edu/school/gordon-j-lau-elementary-school"
   },
   {
     "idSchool": 676,
@@ -33796,7 +33827,8 @@
     "address": "1570 31st Ave., San Francisco, CA 94122-3104",
     "neighborhood": "Sunset/Parkside",
     "website": "No Data",
-    "phone": "(415) 759-2832"
+    "phone": "(415) 759-2832",
+    "sfusdUrl": "https://www.sfusd.edu/school/lawton-alternative-school-k-8"
   },
   {
     "idSchool": 479,
@@ -34711,7 +34743,8 @@
     "address": "3630 Divisadero St., San Francisco, CA 94123-1411",
     "neighborhood": "Marina",
     "website": "No Data",
-    "phone": "(415) 749-3516"
+    "phone": "(415) 749-3516",
+    "sfusdUrl": "https://www.sfusd.edu/school/claire-lilienthal-alternative-school-k-8"
   },
   {
     "idSchool": 691,
@@ -35861,7 +35894,8 @@
     "address": "755 Morse St., San Francisco, CA 94112-4223",
     "neighborhood": "Excelsior",
     "website": "No Data",
-    "phone": "(415) 469-4730"
+    "phone": "(415) 469-4730",
+    "sfusdUrl": "https://www.sfusd.edu/school/longfellow-elementary-school"
   },
   {
     "idSchool": 830,
@@ -36242,7 +36276,8 @@
     "address": "350 Harbor Rd., San Francisco, CA 94124-2474",
     "neighborhood": "Bayview Hunters Point",
     "website": "No Data",
-    "phone": "(415) 695-5950"
+    "phone": "(415) 695-5950",
+    "sfusdUrl": "https://www.sfusd.edu/school/malcolm-x-academy-elementary-school"
   },
   {
     "idSchool": 714,
@@ -36896,7 +36931,8 @@
     "address": "1575 15th St., San Francisco, CA 94103-3639",
     "neighborhood": "Mission",
     "website": "No Data",
-    "phone": "(415) 241-6280"
+    "phone": "(415) 241-6280",
+    "sfusdUrl": "https://www.sfusd.edu/school/marshall-elementary-school"
   },
   {
     "idSchool": 549,
@@ -37821,7 +37857,8 @@
     "address": "651 Sixth Ave., San Francisco, CA 94118-3804",
     "neighborhood": "Inner Richmond",
     "website": "No Data",
-    "phone": "(415) 750-8475"
+    "phone": "(415) 750-8475",
+    "sfusdUrl": "https://www.sfusd.edu/mccoppin"
   },
   {
     "idSchool": 718,
@@ -38905,7 +38942,8 @@
     "address": "1025 14th St., San Francisco, CA 94114-1221",
     "neighborhood": "Castro/Upper Market",
     "website": "No Data",
-    "phone": "(415) 241-6300"
+    "phone": "(415) 241-6300",
+    "sfusdUrl": "https://www.sfusd.edu/school/mckinley-elementary-school"
   },
   {
     "idSchool": 950,
@@ -39597,7 +39635,8 @@
     "address": "2055 Sunnydale Ave., San Francisco, CA 94134-2611",
     "neighborhood": "McLaren Park",
     "website": "No Data",
-    "phone": "(415) 469-4519"
+    "phone": "(415) 469-4519",
+    "sfusdUrl": "https://www.sfusd.edu/school/john-mclaren-early-education-school"
   },
   {
     "idSchool": 505,
@@ -40618,7 +40657,8 @@
     "address": "4235 19th St., San Francisco, CA 94114-2415",
     "neighborhood": "Castro/Upper Market",
     "website": "No Data",
-    "phone": "(415) 241-6276"
+    "phone": "(415) 241-6276",
+    "sfusdUrl": "https://www.sfusd.edu/school/harvey-milk-civil-rights-academy"
   },
   {
     "idSchool": 722,
@@ -41710,7 +41750,8 @@
     "address": "175 Omar Way, San Francisco, CA 94127-1701",
     "neighborhood": "West of Twin Peaks",
     "website": "No Data",
-    "phone": "(415) 469-4734"
+    "phone": "(415) 469-4734",
+    "sfusdUrl": "https://www.sfusd.edu/school/miraloma-elementary-school"
   },
   {
     "idSchool": 1731,
@@ -42696,7 +42737,8 @@
         "Mild to Moderate (SDC)"
       ],
       "hasGeneralEd": true
-    }
+    },
+    "sfusdUrl": "https://www.sfusd.edu/school/mission-bay-school"
   },
   {
     "idSchool": 724,
@@ -44056,7 +44098,8 @@
     "address": "1670 Noe St., San Francisco, CA 94131-2357",
     "neighborhood": "Noe Valley",
     "website": "No Data",
-    "phone": "(415) 695-5313"
+    "phone": "(415) 695-5313",
+    "sfusdUrl": "https://www.sfusd.edu/school/mission-education-center"
   },
   {
     "idSchool": 729,
@@ -45521,7 +45564,8 @@
     "address": "260 Madrid St., San Francisco, CA 94112-2055",
     "neighborhood": "Excelsior",
     "website": "No Data",
-    "phone": "(415) 469-4736"
+    "phone": "(415) 469-4736",
+    "sfusdUrl": "https://www.sfusd.edu/school/monroe-elementary-school"
   },
   {
     "idSchool": 723,
@@ -46851,7 +46895,8 @@
     "address": "2576 Harrison St., San Francisco, CA 94110-2720",
     "neighborhood": "Mission",
     "website": "No Data",
-    "phone": "(415) 695-5736"
+    "phone": "(415) 695-5736",
+    "sfusdUrl": "https://www.sfusd.edu/school/george-r-moscone-elementary-school"
   },
   {
     "idSchool": 650,
@@ -47967,7 +48012,8 @@
     "address": "380 Webster St., San Francisco, CA 94117-3512",
     "neighborhood": "Hayes Valley",
     "website": "No Data",
-    "phone": "(415) 241-6335"
+    "phone": "(415) 241-6335",
+    "sfusdUrl": "https://www.sfusd.edu/school/john-muir-elementary-school"
   },
   {
     "idSchool": 735,
@@ -48486,7 +48532,8 @@
     "address": "2049 Grove St., San Francisco, CA 94117-1123",
     "neighborhood": "Lone Mountain/USF",
     "website": "No Data",
-    "phone": "(415) 750-8490"
+    "phone": "(415) 750-8490",
+    "sfusdUrl": "https://www.sfusd.edu/school/new-traditions-creative-arts-elementary-school"
   },
   {
     "idSchool": 928,
@@ -49300,7 +49347,8 @@
     "address": "1775 44th Ave., San Francisco, CA 94122-4013",
     "neighborhood": "Sunset/Parkside",
     "website": "No Data",
-    "phone": "(415) 759-2853"
+    "phone": "(415) 759-2853",
+    "sfusdUrl": "https://www.sfusd.edu/school/noriega-early-education-school"
   },
   {
     "idSchool": 746,
@@ -50909,7 +50957,8 @@
     "address": "400 Sargent St., San Francisco, CA 94132-3152",
     "neighborhood": "Oceanview/Merced/Ingleside",
     "website": "No Data",
-    "phone": "(415) 469-4726"
+    "phone": "(415) 469-4726",
+    "sfusdUrl": "https://www.sfusd.edu/school/jose-ortega-elementary-school"
   },
   {
     "idSchool": 638,
@@ -51522,7 +51571,8 @@
     "address": "840 Broadway St., San Francisco, CA 94133-4219",
     "neighborhood": "Chinatown",
     "website": "No Data",
-    "phone": "(415) 291-7990"
+    "phone": "(415) 291-7990",
+    "sfusdUrl": "https://www.sfusd.edu/school/jean-parker-elementary-school"
   },
   {
     "idSchool": 786,
@@ -53287,7 +53337,8 @@
     "address": "1501 O'Farrell St., San Francisco, CA 94115-3762",
     "neighborhood": "Western Addition",
     "website": "No Data",
-    "phone": "(415) 749-3519"
+    "phone": "(415) 749-3519",
+    "sfusdUrl": "https://www.sfusd.edu/school/rosa-parks-elementary-school"
   },
   {
     "idSchool": 569,
@@ -53989,7 +54040,8 @@
     "address": "251 Sixth Ave., San Francisco, CA 94118-2311",
     "neighborhood": "Inner Richmond",
     "website": "No Data",
-    "phone": "(415) 750-8480"
+    "phone": "(415) 750-8480",
+    "sfusdUrl": "https://www.sfusd.edu/school/george-peabody-elementary-school"
   },
   {
     "idSchool": 790,
@@ -54806,7 +54858,8 @@
     "address": "1421 Pine St., San Francisco, CA 94109-4719",
     "neighborhood": "Nob Hill",
     "website": "No Data",
-    "phone": "(415) 749-3525"
+    "phone": "(415) 749-3525",
+    "sfusdUrl": "https://www.sfusd.edu/school/redding-elementary-school"
   },
   {
     "idSchool": 760,
@@ -55974,7 +56027,8 @@
     "address": "555 Tompkins Ave., San Francisco, CA 94110-6144",
     "neighborhood": "Bernal Heights",
     "website": "No Data",
-    "phone": "(415) 695-5656"
+    "phone": "(415) 695-5656",
+    "sfusdUrl": "https://www.sfusd.edu/school/paul-revere-prek-8-school"
   },
   {
     "idSchool": 965,
@@ -56463,7 +56517,8 @@
       ],
       "specialEd": [],
       "hasGeneralEd": false
-    }
+    },
+    "sfusdUrl": "https://www.sfusd.edu/school/zaida-t-rodriguez-early-education-school"
   },
   {
     "idSchool": 796,
@@ -57276,7 +57331,8 @@
     "address": "443 Burnett Ave., San Francisco, CA 94131-1330",
     "neighborhood": "Twin Peaks",
     "website": "No Data",
-    "phone": "(415) 695-5692"
+    "phone": "(415) 695-5692",
+    "sfusdUrl": "https://www.sfusd.edu/school/rooftop-school-tk-8"
   },
   {
     "idSchool": 987,
@@ -57882,7 +57938,8 @@
     "address": "300 Seneca Ave., San Francisco, CA 94112-3248",
     "neighborhood": "Outer Mission",
     "website": "No Data",
-    "phone": "(415) 469-4756"
+    "phone": "(415) 469-4756",
+    "sfusdUrl": "https://www.sfusd.edu/school/san-miguel-early-education-school"
   },
   {
     "idSchool": 816,
@@ -59269,7 +59326,8 @@
     "address": "325 Sanchez St., San Francisco, CA 94114-1615",
     "neighborhood": "Castro/Upper Market",
     "website": "No Data",
-    "phone": "(415) 241-6380"
+    "phone": "(415) 241-6380",
+    "sfusdUrl": "https://www.sfusd.edu/school/sanchez-elementary-school"
   },
   {
     "idSchool": 955,
@@ -60019,7 +60077,8 @@
     "address": "625 Holly Park Cir., San Francisco, CA 94110-5815",
     "neighborhood": "Bernal Heights",
     "website": "No Data",
-    "phone": "(415) 695-5685"
+    "phone": "(415) 695-5685",
+    "sfusdUrl": "https://www.sfusd.edu/school/junipero-serra-annex-early-education-school"
   },
   {
     "idSchool": 656,
@@ -61175,7 +61234,8 @@
     "address": "625 Holly Park Cir., San Francisco, CA 94110-5815",
     "neighborhood": "Bernal Heights",
     "website": "No Data",
-    "phone": "(415) 695-5685"
+    "phone": "(415) 695-5685",
+    "sfusdUrl": "https://www.sfusd.edu/school/junipero-serra-elementary-school"
   },
   {
     "idSchool": 493,
@@ -61829,7 +61889,8 @@
       "languages": [],
       "specialEd": [],
       "hasGeneralEd": true
-    }
+    },
+    "sfusdUrl": "https://www.sfusd.edu/school/san-francisco-community-school"
   },
   {
     "idSchool": 814,
@@ -62683,7 +62744,8 @@
       "languages": [],
       "specialEd": [],
       "hasGeneralEd": true
-    }
+    },
+    "sfusdUrl": "https://www.sfusd.edu/school/san-francisco-public-montessori"
   },
   {
     "idSchool": 820,
@@ -63408,7 +63470,8 @@
     "address": "431 Capitol Ave., San Francisco, CA 94112-2934",
     "neighborhood": "Oceanview/Merced/Ingleside",
     "website": "No Data",
-    "phone": "(415) 469-4743"
+    "phone": "(415) 469-4743",
+    "sfusdUrl": "https://www.sfusd.edu/school/sheridan-elementary-school"
   },
   {
     "idSchool": 823,
@@ -64641,7 +64704,8 @@
     "address": "1651 Union St., San Francisco, CA 94123-4506",
     "neighborhood": "Marina",
     "website": "No Data",
-    "phone": "(415) 749-3530"
+    "phone": "(415) 749-3530",
+    "sfusdUrl": "https://www.sfusd.edu/school/sherman-elementary-school"
   },
   {
     "idSchool": 488,
@@ -65200,7 +65264,8 @@
     "address": "50 Darien Way, San Francisco, CA 94127-1902",
     "neighborhood": "West of Twin Peaks",
     "website": "No Data",
-    "phone": "(415) 759-2807"
+    "phone": "(415) 759-2807",
+    "sfusdUrl": "https://www.sfusd.edu/school/commodore-sloat-elementary-school"
   },
   {
     "idSchool": 834,
@@ -66057,7 +66122,8 @@
     "address": "1451 Jackson St., San Francisco, CA 94109-3115",
     "neighborhood": "Russian Hill",
     "website": "No Data",
-    "phone": "(415) 749-3535"
+    "phone": "(415) 749-3535",
+    "sfusdUrl": "https://www.sfusd.edu/school/spring-valley-science-elementary-school"
   },
   {
     "idSchool": 782,
@@ -67314,7 +67380,8 @@
     "address": "2051 34th Ave., San Francisco, CA 94116-1109",
     "neighborhood": "Sunset/Parkside",
     "website": "No Data",
-    "phone": "(415) 759-2837"
+    "phone": "(415) 759-2837",
+    "sfusdUrl": "https://www.sfusd.edu/school/robert-louis-stevenson-elementary-school"
   },
   {
     "idSchool": 915,
@@ -67626,7 +67693,8 @@
     "address": "1 Trenton St., San Francisco, CA 94108-1112",
     "neighborhood": "Chinatown",
     "website": "No Data",
-    "phone": "(415) 291-7932"
+    "phone": "(415) 291-7932",
+    "sfusdUrl": "https://www.sfusd.edu/school/commodore-stockton-early-education-school"
   },
   {
     "idSchool": 842,
@@ -68264,7 +68332,8 @@
     "address": "250 Foerster St., San Francisco, CA 94112-1341",
     "neighborhood": "West of Twin Peaks",
     "website": "https://www.sunnysidesf.org/",
-    "phone": "(415) 469-4746"
+    "phone": "(415) 469-4746",
+    "sfusdUrl": "https://www.sfusd.edu/school/sunnyside-elementary-school"
   },
   {
     "idSchool": 750,
@@ -68878,7 +68947,8 @@
     "address": "1920 41st Ave., San Francisco, CA 94116-1101",
     "neighborhood": "Sunset/Parkside",
     "website": "No Data",
-    "phone": "(415) 759-2760"
+    "phone": "(415) 759-2760",
+    "sfusdUrl": "https://www.sfusd.edu/school/sunset-elementary-school"
   },
   {
     "idSchool": 848,
@@ -70042,7 +70112,8 @@
     "address": "235 12th Ave., San Francisco, CA 94118-2103",
     "neighborhood": "Inner Richmond",
     "website": "No Data",
-    "phone": "(415) 750-8525"
+    "phone": "(415) 750-8525",
+    "sfusdUrl": "https://www.sfusd.edu/school/sutro-elementary-school"
   },
   {
     "idSchool": 513,
@@ -71499,7 +71570,8 @@
     "address": "423 Burrows St., San Francisco, CA 94134-1449",
     "neighborhood": "Portola",
     "website": "No Data",
-    "phone": "(415) 330-1530"
+    "phone": "(415) 330-1530",
+    "sfusdUrl": "https://www.sfusd.edu/school/er-taylor-elementary-school"
   },
   {
     "idSchool": 859,
@@ -72284,7 +72356,8 @@
     "address": "627 Turk St., San Francisco, CA 94102-3212",
     "neighborhood": "Tenderloin",
     "website": "No Data",
-    "phone": "(415) 749-3567"
+    "phone": "(415) 749-3567",
+    "sfusdUrl": "https://www.sfusd.edu/school/tenderloin-community-elementary-school"
   },
   {
     "idSchool": 997,
@@ -73486,7 +73559,8 @@
     "address": "2110 Greenwich St., San Francisco, CA 94123-3405",
     "neighborhood": "Marina",
     "website": "No Data",
-    "phone": "(415) 749-3551"
+    "phone": "(415) 749-3551",
+    "sfusdUrl": "https://www.sfusd.edu/school/tule-elk-park-early-education-school"
   },
   {
     "idSchool": 862,
@@ -74794,7 +74868,8 @@
     "address": "2650 42nd Ave., San Francisco, CA 94116-2714",
     "neighborhood": "Sunset/Parkside",
     "website": "No Data",
-    "phone": "(415) 759-2841"
+    "phone": "(415) 759-2841",
+    "sfusdUrl": "https://www.sfusd.edu/school/ulloa-elementary-school"
   },
   {
     "idSchool": 867,
@@ -75471,7 +75546,8 @@
     "address": "55 Schwerin St., San Francisco, CA 94134-2742",
     "neighborhood": "Visitacion Valley",
     "website": "No Data",
-    "phone": "(415) 469-4796"
+    "phone": "(415) 469-4796",
+    "sfusdUrl": "https://www.sfusd.edu/school/visitacion-valley-elementary-school"
   },
   {
     "idSchool": 497,
@@ -76722,7 +76798,8 @@
     "address": "465 Missouri St., San Francisco, CA 94107-2826",
     "neighborhood": "Potrero Hill",
     "website": "No Data",
-    "phone": "(415) 695-5787"
+    "phone": "(415) 695-5787",
+    "sfusdUrl": "https://www.sfusd.edu/school/daniel-webster-elementary-school"
   },
   {
     "idSchool": 876,
@@ -78411,7 +78488,8 @@
     "address": "5 Lenox Way, San Francisco, CA 94127-1111",
     "neighborhood": "West of Twin Peaks",
     "website": "No Data",
-    "phone": "(415) 759-2846"
+    "phone": "(415) 759-2846",
+    "sfusdUrl": "https://www.sfusd.edu/school/west-portal-elementary-school"
   },
   {
     "idSchool": 801,
@@ -78989,7 +79067,8 @@
         "Sheltered (SDC)"
       ],
       "hasGeneralEd": true
-    }
+    },
+    "sfusdUrl": "https://www.sfusd.edu/school/yick-wo-alternative-elementary-school"
   },
   {
     "idSchool": 485,
@@ -79739,6 +79818,7 @@
     "address": "1541 12th Ave., San Francisco, CA 94122-3503",
     "neighborhood": "Inner Sunset",
     "website": "No Data",
-    "phone": "(415) 759-2764"
+    "phone": "(415) 759-2764",
+    "sfusdUrl": "https://www.sfusd.edu/school/alice-fong-yu-alternative-school-k-8"
   }
 ]

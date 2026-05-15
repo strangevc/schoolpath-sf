@@ -49,6 +49,8 @@ export type School = {
   neighborhood?: string;
   website?: string;
   phone?: string;
+  /** URL of the SFUSD school detail page */
+  sfusdUrl?: string;
   tags: SchoolTags;
 };
 

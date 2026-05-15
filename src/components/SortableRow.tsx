@@ -57,7 +57,24 @@ export default function SortableRow({
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0">
             <div className="text-[15px] font-semibold truncate">
-              {school.name}
+              {school.sfusdUrl ? (
+                <a
+                  href={school.sfusdUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline decoration-1 underline-offset-2"
+                >
+                  {school.name}
+                  <span
+                    className="text-muted ml-1 text-[11px]"
+                    aria-hidden
+                  >
+                    ↗
+                  </span>
+                </a>
+              ) : (
+                school.name
+              )}
             </div>
             <div className="text-[12px] text-muted mt-0.5">
               {program.programName}

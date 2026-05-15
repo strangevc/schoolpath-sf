@@ -284,6 +284,91 @@ function lookupDirectory(name: string): DirectoryRow | undefined {
   return undefined;
 }
 
+// --- SFUSD URL lookup ---
+// Pre-scraped list of all SFUSD school detail page URLs from
+// /schools/directory. Lets us match our 80 schools to their canonical
+// detail-page URLs without guessing slug patterns.
+type SfusdUrlEntry = { name: string; slug: string; url: string };
+const sfusdUrlList: SfusdUrlEntry[] = (() => {
+  const p = resolve(RAW, "sfusd_school_urls.json");
+  if (existsSync(p)) return JSON.parse(readFileSync(p, "utf8"));
+  return [];
+})();
+
+const normForUrl = (raw: string) => {
+  // Our format puts middle name in parens: "Flynn (Leonard R) ES" — flip so
+  // it matches SFUSD's "Leonard R Flynn Elementary School" ordering before
+  // normalizing.
+  const flipped = raw.replace(
+    /^([^(]+?)\s*\(([^)]+)\)\s*(.*)$/,
+    (_, before, paren, after) =>
+      `${paren} ${before.trim()} ${after}`.trim()
+  );
+  return flipped
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "") // strip diacritics (é → e, á → a)
+    .replace(/[一-鿿]+/g, " ") // strip CJK ideographs
+    .toLowerCase()
+    .replace(/[():,.]/g, " ")
+    .replace(
+      /\b(elementary|school|academy|the|early education|community|preparatory)\b/g,
+      ""
+    )
+    .replace(/\b(es|ees|hs|ms|k-?8|prek-?\d+|prek)\b/g, "")
+    .replace(/\bdr\b/g, "")
+    .replace(/\bcollege\b/g, "")
+    .replace(/\bat\b/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+};
+
+// Manual overrides for schools the matcher can't disambiguate.
+const MANUAL_URLS: Record<string, string> = {
+  "McCoppin (Frank) ES": "https://www.sfusd.edu/mccoppin",
+  "SF Community K-8":
+    "https://www.sfusd.edu/school/san-francisco-community-school",
+};
+
+function sfusdDetailUrl(name: string): string | null {
+  if (MANUAL_URLS[name]) return MANUAL_URLS[name];
+  if (!sfusdUrlList.length) return null;
+  const STOPWORDS = new Set([
+    "the","and","of","at","r","w","dr","mr","mrs","sf","san","francisco","early","ed",
+    "education","elementary","school","academy","community","preparatory","college","jr",
+    "civil","right","rights","center",
+  ]);
+  const tokenize = (s: string) =>
+    new Set(
+      normForUrl(s)
+        .split(" ")
+        .filter((t) => t && !STOPWORDS.has(t))
+    );
+  const target = tokenize(name);
+  if (!target.size) return null;
+  // Exact normalized match first
+  const norm = normForUrl(name);
+  let exact = sfusdUrlList.find((e) => normForUrl(e.name) === norm);
+  if (exact) return exact.url;
+  // Otherwise score by content-word overlap
+  let bestScore = 0;
+  let bestUrl: string | null = null;
+  for (const e of sfusdUrlList) {
+    const t = tokenize(e.name);
+    if (!t.size) continue;
+    let overlap = 0;
+    for (const w of target) if (t.has(w)) overlap += 1;
+    // Require at least 2 shared tokens, OR 1 if either set has ≤2 tokens.
+    const minRequired = target.size <= 2 || t.size <= 2 ? 1 : 2;
+    if (overlap < minRequired) continue;
+    const score = overlap / Math.max(target.size, t.size);
+    if (score > bestScore) {
+      bestScore = score;
+      bestUrl = e.url;
+    }
+  }
+  return bestScore >= 0.5 ? bestUrl : null;
+}
+
 function inferSchoolType(name: string): "ES" | "K8" | "EarlyEd" | "Other" {
   if (/K-8/i.test(name)) return "K8";
   if (/\bEES\b/.test(name) || /Early Ed/i.test(name)) return "EarlyEd";
@@ -370,6 +455,7 @@ const schools = Array.from(schoolMap.values())
       neighborhood: dir?.neighborhood,
       website: dir?.website,
       phone: dir?.phone,
+      sfusdUrl: sfusdDetailUrl(s.name),
     };
   })
   .sort((a, b) => a.name.localeCompare(b.name));

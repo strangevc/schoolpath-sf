@@ -58,6 +58,7 @@ export default function Suggestions({
               distanceMi={s.distanceMi}
               reason={s.reason}
               chips={chips}
+              sfusdUrl={s.school.sfusdUrl ?? null}
               added={false}
               onAdd={() =>
                 onAdd({

@@ -18,6 +18,8 @@ export type SchoolCardProps = {
   onAdd: () => void;
   /** Optional small chips, e.g. ["Spanish Immersion", "K-8"] */
   chips?: string[];
+  /** Link to SFUSD school detail page */
+  sfusdUrl?: string | null;
 };
 
 export default function SchoolCard({
@@ -32,12 +34,29 @@ export default function SchoolCard({
   added,
   onAdd,
   chips,
+  sfusdUrl,
 }: SchoolCardProps) {
   return (
     <div className="border border-rule rounded-2xl p-4 flex flex-col gap-3 bg-paper">
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0 flex-1">
-          <div className="text-[15px] font-semibold leading-[1.3]">{name}</div>
+          <div className="text-[15px] font-semibold leading-[1.3]">
+            {sfusdUrl ? (
+              <a
+                href={sfusdUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline decoration-1 underline-offset-2"
+              >
+                {name}
+                <span className="text-muted ml-1 text-[11px]" aria-hidden>
+                  ↗
+                </span>
+              </a>
+            ) : (
+              name
+            )}
+          </div>
           <div className="text-[12px] text-muted mt-0.5">{programName}</div>
           {chips && chips.length > 0 && (
             <div className="flex flex-wrap gap-1.5 mt-2">
