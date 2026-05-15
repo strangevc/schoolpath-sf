@@ -5,6 +5,7 @@ import { SCHOOLS } from "@/lib/data";
 import { bestProgramFor } from "@/lib/tier";
 import { milesBetween } from "@/lib/suggest";
 import SchoolCard from "./SchoolCard";
+import SchoolMap, { type MapSchool } from "./SchoolMap";
 import type { ListItem, Situation, Tier } from "@/lib/types";
 
 const LANGUAGE_OPTIONS = [
@@ -56,6 +57,7 @@ export default function AddSchoolsDrawer({
     situation.prefs?.neighborhoods ?? []
   );
   const [showFilters, setShowFilters] = useState(false);
+  const [view, setView] = useState<"list" | "map">("list");
 
   const onList = useMemo(() => new Set(list.map((l) => l.schoolId)), [list]);
   const home = situation.lat && situation.lng
@@ -68,21 +70,16 @@ export default function AddSchoolsDrawer({
     return [...set].sort();
   }, []);
 
-  const items = useMemo(() => {
-    const grade = situation.grade;
-    // Two-tier filter logic:
-    //   Always-applied: grade availability, search query, and the single
-    //   Category (tier) selector. These narrow the universe.
-    //   Match-any (OR): School type, Language program, Distance, Neighborhood.
-    //   When any of these filter groups are active, a school passes if it
-    //   matches at least one of the active groups. When none are set, all
-    //   schools pass.
-    const anyOptionalActive =
-      typeFilter.length > 0 ||
-      langFilter.length > 0 ||
-      neighborhoods.length > 0 ||
-      distFilter != null;
+  const anyOptionalActive =
+    typeFilter.length > 0 ||
+    langFilter.length > 0 ||
+    neighborhoods.length > 0 ||
+    distFilter != null;
 
+  // All schools in the user's grade with computed best program + tier + dist.
+  // List view filters this. Map view passes the full set with a `visible` flag.
+  const base = useMemo(() => {
+    const grade = situation.grade;
     return SCHOOLS.filter((s) => {
       const hasGrade =
         grade === "TK" ? s.tkPrograms.length > 0 : s.kPrograms.length > 0;
@@ -95,38 +92,60 @@ export default function AddSchoolsDrawer({
         const dist = home && s.coords ? milesBetween(home, s.coords) : null;
         return { school: s, best, dist };
       })
-      .filter((x) => x.best !== null)
-      .filter((x) =>
-        tierFilter === "all" ? true : x.best!.odds.tier === tierFilter
-      )
-      .filter((x) => {
-        if (!anyOptionalActive) return true;
-        const s = x.school;
-        const typeMatch =
-          typeFilter.length > 0 && typeFilter.includes(s.tags.schoolType);
-        const langMatch =
-          langFilter.length > 0 &&
-          s.tags.languages.some((l) => langFilter.includes(l));
-        const neighMatch =
-          neighborhoods.length > 0 &&
-          neighborhoods.includes(s.neighborhood || "");
-        const distMatch =
-          distFilter != null && x.dist != null && x.dist <= distFilter;
-        return typeMatch || langMatch || neighMatch || distMatch;
-      })
-      .sort((a, b) => {
-        const rank: Record<string, number> = {
-          strong: 0,
-          likely: 1,
-          stretch: 2,
-          unknown: 3,
-        };
-        const ra = rank[a.best!.odds.tier];
-        const rb = rank[b.best!.odds.tier];
-        if (ra !== rb) return ra - rb;
-        return (b.best!.odds.pctSuccess ?? 0) - (a.best!.odds.pctSuccess ?? 0);
-      });
-  }, [q, tierFilter, langFilter, typeFilter, distFilter, neighborhoods, situation, home]);
+      .filter((x) => x.best !== null);
+  }, [q, situation, home]);
+
+  const matches = (
+    x: (typeof base)[number]
+  ): boolean => {
+    if (tierFilter !== "all" && x.best!.odds.tier !== tierFilter) return false;
+    if (!anyOptionalActive) return true;
+    const s = x.school;
+    const typeMatch =
+      typeFilter.length > 0 && typeFilter.includes(s.tags.schoolType);
+    const langMatch =
+      langFilter.length > 0 &&
+      s.tags.languages.some((l) => langFilter.includes(l));
+    const neighMatch =
+      neighborhoods.length > 0 && neighborhoods.includes(s.neighborhood || "");
+    const distMatch =
+      distFilter != null && x.dist != null && x.dist <= distFilter;
+    return typeMatch || langMatch || neighMatch || distMatch;
+  };
+
+  const items = useMemo(
+    () =>
+      base
+        .filter((x) => matches(x))
+        .sort((a, b) => {
+          const rank: Record<string, number> = {
+            strong: 0,
+            likely: 1,
+            stretch: 2,
+            unknown: 3,
+          };
+          const ra = rank[a.best!.odds.tier];
+          const rb = rank[b.best!.odds.tier];
+          if (ra !== rb) return ra - rb;
+          return (b.best!.odds.pctSuccess ?? 0) - (a.best!.odds.pctSuccess ?? 0);
+        }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [base, tierFilter, langFilter, typeFilter, distFilter, neighborhoods]
+  );
+
+  const mapItems = useMemo<MapSchool[]>(
+    () =>
+      base.map((x) => ({
+        school: x.school,
+        program: x.best!.program,
+        tier: x.best!.odds.tier,
+        pctSuccess: x.best!.odds.pctSuccess,
+        distanceMi: x.dist,
+        visible: matches(x),
+      })),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [base, tierFilter, langFilter, typeFilter, distFilter, neighborhoods]
+  );
 
   if (!open) return null;
   return (
@@ -137,21 +156,47 @@ export default function AddSchoolsDrawer({
         aria-label="Close"
       />
       <div className="relative w-full max-w-[640px] h-full bg-paper shadow-xl flex flex-col">
-        <div className="p-5 border-b border-rule flex items-center justify-between">
-          <div>
+        <div className="p-5 border-b border-rule flex items-center justify-between gap-3">
+          <div className="min-w-0">
             <div className="text-[18px] font-semibold">Add schools</div>
             <div className="text-[13px] text-muted">
-              {items.length} {items.length === 1 ? "match" : "matches"}, sorted
-              by likelihood for your situation.
+              {items.length} {items.length === 1 ? "match" : "matches"}
+              {view === "map" && ` · ${mapItems.length - items.length} faded`}
             </div>
           </div>
-          <button
-            onClick={onClose}
-            className="w-9 h-9 rounded-full border border-rule hover:bg-rule/40"
-            aria-label="Close"
-          >
-            ✕
-          </button>
+          <div className="flex items-center gap-2 shrink-0">
+            <div className="flex border border-rule rounded-full p-0.5">
+              <button
+                onClick={() => setView("list")}
+                aria-pressed={view === "list"}
+                className={`h-7 px-3 rounded-full text-[12px] font-medium ${
+                  view === "list"
+                    ? "bg-ink text-paper"
+                    : "text-muted hover:text-ink"
+                }`}
+              >
+                List
+              </button>
+              <button
+                onClick={() => setView("map")}
+                aria-pressed={view === "map"}
+                className={`h-7 px-3 rounded-full text-[12px] font-medium ${
+                  view === "map"
+                    ? "bg-ink text-paper"
+                    : "text-muted hover:text-ink"
+                }`}
+              >
+                Map
+              </button>
+            </div>
+            <button
+              onClick={onClose}
+              className="w-9 h-9 rounded-full border border-rule hover:bg-rule/40"
+              aria-label="Close"
+            >
+              ✕
+            </button>
+          </div>
         </div>
 
         <div className="p-5 flex flex-col gap-3 border-b border-rule">
@@ -253,7 +298,17 @@ export default function AddSchoolsDrawer({
         </div>
 
         <div className="flex-1 overflow-y-auto p-5 flex flex-col gap-3">
-          {items.map(({ school, best, dist }) => {
+          {view === "map" && (
+            <SchoolMap
+              schools={mapItems}
+              userHome={home}
+              onList={onList}
+              onAdd={(schoolId, programCode, tier) =>
+                onAdd({ schoolId, programCode, tier })
+              }
+            />
+          )}
+          {view === "list" && items.map(({ school, best, dist }) => {
             const added = onList.has(school.idSchool);
             const chips: string[] = [];
             if (school.tags.schoolType === "K8") chips.push("K-8");
@@ -283,7 +338,7 @@ export default function AddSchoolsDrawer({
               />
             );
           })}
-          {!items.length && (
+          {view === "list" && !items.length && (
             <div className="text-[14px] text-muted py-8 text-center">
               No schools match your filters.
             </div>
