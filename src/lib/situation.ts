@@ -38,3 +38,10 @@ export function saveList(list: StoredList) {
   if (typeof window === "undefined") return;
   window.localStorage.setItem(LIST_KEY, JSON.stringify(list));
 }
+
+/** Clears all locally stored data (situation + ranking). Used by the Start over flow. */
+export function resetLocalData() {
+  if (typeof window === "undefined") return;
+  window.localStorage.removeItem(KEY);
+  window.localStorage.removeItem(LIST_KEY);
+}

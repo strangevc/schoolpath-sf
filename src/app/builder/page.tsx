@@ -17,11 +17,12 @@ import {
   sortableKeyboardCoordinates,
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
+import { useRouter } from "next/navigation";
 import {
   loadList,
   loadSituation,
+  resetLocalData,
   saveList,
-  saveSituation,
 } from "@/lib/situation";
 import { SCHOOLS, TK_FEEDERS, schoolById } from "@/lib/data";
 import { bestProgramFor, oddsFor } from "@/lib/tier";
@@ -33,6 +34,7 @@ import Suggestions from "@/components/Suggestions";
 import AddSchoolsDrawer from "@/components/AddSchoolsDrawer";
 
 export default function BuilderPage() {
+  const router = useRouter();
   const [situation, setSituation] = useState<Situation | null>(null);
   const [list, setList] = useState<ListItem[]>([]);
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -183,7 +185,22 @@ export default function BuilderPage() {
           >
             SchoolPath SF
           </Link>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-wrap justify-end">
+            <button
+              onClick={() => {
+                if (
+                  confirm(
+                    "Clear your information and ranking? This cannot be undone."
+                  )
+                ) {
+                  resetLocalData();
+                  router.push("/start");
+                }
+              }}
+              className="text-[14px] text-muted hover:text-ink"
+            >
+              Start over
+            </button>
             <Link
               href="/start"
               className="text-[14px] text-muted hover:text-ink"
