@@ -55,12 +55,22 @@ export function mostUnderweightedTier(
 
 /**
  * Build the candidate list for the user (every school with a program in the
- * user's grade), with computed tier and distance.
+ * user's grade), with computed tier and distance. When intake prefs are set,
+ * filters candidates by OR-across-groups (matches the drawer's filter logic):
+ * a school passes if it satisfies at least one active pref group.
  */
 export function candidatesFor(situation: Situation): Candidate[] {
   const home = situation.lat && situation.lng
     ? { lat: situation.lat, lng: situation.lng }
     : null;
+  const prefs = situation.prefs;
+  const anyPrefActive =
+    !!prefs &&
+    (prefs.languages.length > 0 ||
+      prefs.schoolTypes.length > 0 ||
+      prefs.neighborhoods.length > 0 ||
+      prefs.maxDistanceMi != null);
+
   return SCHOOLS.flatMap((school) => {
     const list =
       situation.grade === "TK" ? school.tkPrograms : school.kPrograms;
@@ -69,6 +79,30 @@ export function candidatesFor(situation: Situation): Candidate[] {
     if (!best) return [];
     const distanceMi =
       home && school.coords ? milesBetween(home, school.coords) : null;
+
+    // Apply intake prefs as OR across groups. Always include the user's AA
+    // school and sibling-linked school regardless of prefs — those are
+    // structural to a healthy ranking.
+    const isAnchor =
+      school.idSchool === situation.aaSchoolId ||
+      school.idSchool === situation.siblingSchoolId;
+    if (anyPrefActive && !isAnchor && prefs) {
+      const langMatch =
+        prefs.languages.length > 0 &&
+        school.tags.languages.some((l) => prefs.languages.includes(l));
+      const typeMatch =
+        prefs.schoolTypes.length > 0 &&
+        prefs.schoolTypes.includes(school.tags.schoolType);
+      const neighMatch =
+        prefs.neighborhoods.length > 0 &&
+        prefs.neighborhoods.includes(school.neighborhood || "");
+      const distMatch =
+        prefs.maxDistanceMi != null &&
+        distanceMi != null &&
+        distanceMi <= prefs.maxDistanceMi;
+      if (!langMatch && !typeMatch && !neighMatch && !distMatch) return [];
+    }
+
     let reason = "";
     if (best.odds.tier === "strong") reason = "Likely placement for your situation";
     else if (best.odds.tier === "likely") reason = "Possible placement";
