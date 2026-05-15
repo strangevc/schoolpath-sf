@@ -63,7 +63,14 @@ export default function SortableRow({
               {program.programName}
             </div>
           </div>
-          <TierBadge tier={odds.tier} size="sm" />
+          <div className="flex flex-col items-end gap-1 shrink-0">
+            {odds.pctSuccess !== null && (
+              <div className="text-[18px] font-semibold tabular-nums leading-none">
+                {Math.round(odds.pctSuccess * 100)}%
+              </div>
+            )}
+            <TierBadge tier={odds.tier} size="sm" />
+          </div>
         </div>
         <div className="text-[12px] text-muted mt-2 leading-[1.55]">
           {odds.oddsPhrase}

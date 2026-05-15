@@ -10,8 +10,8 @@ import type {
 } from "./types";
 
 const THRESHOLDS = {
-  strong: 0.8,
-  likely: 0.4,
+  strong: 0.6, // ≥60% admitted in user's tiebreaker tier → "Likely"
+  likely: 0.3, // 30–60% → "Possible"; below 30% → "Competitive"
 };
 
 /**
@@ -145,15 +145,15 @@ function tierRank(t: Tier): number {
 export const TIER_COPY: Record<Tier, { label: string; sub: string }> = {
   strong: {
     label: "Likely",
-    sub: "Most families with your tiebreakers have been admitted here.",
+    sub: "60% or more of applicants in your tiebreaker category were admitted.",
   },
   likely: {
     label: "Possible",
-    sub: "About half of families in your situation have been admitted.",
+    sub: "Between 30% and 60% of similar applicants were admitted.",
   },
   stretch: {
     label: "Competitive",
-    sub: "Demand exceeds available seats. Many applicants are not admitted.",
+    sub: "Fewer than 30% of similar applicants were admitted. Demand exceeds seats.",
   },
   unknown: {
     label: "Not enough data",

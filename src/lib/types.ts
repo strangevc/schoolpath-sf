@@ -30,6 +30,13 @@ export type SchoolProgram = {
   ranks: RankBreakdown[];
 };
 
+export type SchoolTags = {
+  schoolType: "ES" | "K8" | "EarlyEd" | "Other";
+  languages: string[];
+  specialEd: string[];
+  hasGeneralEd: boolean;
+};
+
 export type School = {
   idSchool: number;
   name: string;
@@ -37,6 +44,12 @@ export type School = {
   tkPrograms: SchoolProgram[];
   kPrograms: SchoolProgram[];
   totalSeats: { TK: number; K: number };
+  coords?: { lat: number; lng: number } | null;
+  address?: string;
+  neighborhood?: string;
+  website?: string;
+  phone?: string;
+  tags: SchoolTags;
 };
 
 export type Situation = {

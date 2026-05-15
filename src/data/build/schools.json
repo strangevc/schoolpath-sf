@@ -1118,7 +1118,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.783124,
+      "lng": -122.482191
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Sheltered (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "250 23rd Ave., San Francisco, CA 94121-2009",
+    "neighborhood": "Outer Richmond",
+    "website": "No Data",
+    "phone": "(415) 750-8456"
   },
   {
     "idSchool": 420,
@@ -3084,7 +3100,25 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.753675,
+      "lng": -122.438734
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Immersion"
+      ],
+      "specialEd": [
+        "Extensive Support (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "625 Douglas St., San Francisco, CA 94114-3140",
+    "neighborhood": "Noe Valley",
+    "website": "No Data",
+    "phone": "(415) 695-5695"
   },
   {
     "idSchool": 903,
@@ -3502,7 +3536,21 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.77515,
+      "lng": -122.476799
+    },
+    "tags": {
+      "schoolType": "EarlyEd",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "680 18th Ave., San Francisco, CA 94121-3818",
+    "neighborhood": "Outer Richmond",
+    "website": "No Data",
+    "phone": "(415) 750-8460"
   },
   {
     "idSchool": 435,
@@ -4666,7 +4714,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.77515,
+      "lng": -122.476799
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Autism Focus (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "680 18th Ave., San Francisco, CA 94121-3818",
+    "neighborhood": "Outer Richmond",
+    "website": "No Data",
+    "phone": "(415) 750-8460"
   },
   {
     "idSchool": 456,
@@ -5566,7 +5630,23 @@
     "totalSeats": {
       "TK": 34,
       "K": 7
-    }
+    },
+    "coords": {
+      "lat": 37.751628,
+      "lng": -122.404906
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Biliteracy"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "2641 25th St., San Francisco, CA 94110-3514",
+    "neighborhood": "Mission",
+    "website": "No Data",
+    "phone": "(415) 695-5780"
   },
   {
     "idSchool": 618,
@@ -6361,6 +6441,17 @@
     "totalSeats": {
       "TK": 0,
       "K": 1
+    },
+    "coords": null,
+    "tags": {
+      "schoolType": "K8",
+      "languages": [
+        "Spanish Immersion"
+      ],
+      "specialEd": [
+        "Mild to Moderate (SDC)"
+      ],
+      "hasGeneralEd": false
     }
   },
   {
@@ -7101,7 +7192,23 @@
     "totalSeats": {
       "TK": 12,
       "K": 14
-    }
+    },
+    "coords": {
+      "lat": 37.775856,
+      "lng": -122.406742
+    },
+    "tags": {
+      "schoolType": "K8",
+      "languages": [
+        "Filipino FLES"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "375 Seventh St., San Francisco, CA 94103-4020",
+    "neighborhood": "South of Market",
+    "website": "No Data",
+    "phone": "(415) 355-6916"
   },
   {
     "idSchool": 625,
@@ -7596,7 +7703,21 @@
     "totalSeats": {
       "TK": 40,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.732403,
+      "lng": -122.386385
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "1360 Oakdale Ave., San Francisco, CA 94124-2724",
+    "neighborhood": "Bayview Hunters Point",
+    "website": "No Data",
+    "phone": "(415) 330-1540"
   },
   {
     "idSchool": 603,
@@ -8608,7 +8729,23 @@
     "totalSeats": {
       "TK": 9,
       "K": 3
-    }
+    },
+    "coords": {
+      "lat": 37.75488,
+      "lng": -122.415419
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Biliteracy"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "825 Shotwell St., San Francisco, CA 94110-3212",
+    "neighborhood": "Mission",
+    "website": "No Data",
+    "phone": "(415) 695-5765"
   },
   {
     "idSchool": 872,
@@ -8993,7 +9130,21 @@
     "totalSeats": {
       "TK": 0,
       "K": 7
-    }
+    },
+    "coords": {
+      "lat": 37.79831,
+      "lng": -122.403175
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "350 Broadway St., San Francisco, CA 94133-4503",
+    "neighborhood": "North Beach",
+    "website": "No Data",
+    "phone": "(415) 291-7946"
   },
   {
     "idSchool": 509,
@@ -10242,7 +10393,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.769464,
+      "lng": -122.444292
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Cantonese Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": false
+    },
+    "address": "1250 Waller St., San Francisco, CA 94117-2919",
+    "neighborhood": "Haight Ashbury",
+    "website": "www.sfusd.edu",
+    "phone": "(415) 241-6325"
   },
   {
     "idSchool": 478,
@@ -12045,7 +12212,25 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.752989,
+      "lng": -122.456111
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Japanese Bilingual"
+      ],
+      "specialEd": [
+        "Mild to Moderate (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "500 Clarendon Ave., San Francisco, CA 94131-1113",
+    "neighborhood": "Inner Sunset",
+    "website": "No Data",
+    "phone": "(415) 759-2796"
   },
   {
     "idSchool": 481,
@@ -12539,7 +12724,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 17
-    }
+    },
+    "coords": {
+      "lat": 37.720733,
+      "lng": -122.429048
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Biliteracy"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "455 Athens St., San Francisco, CA 94112-2801",
+    "neighborhood": "Excelsior",
+    "website": "No Data",
+    "phone": "(415) 469-4709"
   },
   {
     "idSchool": 525,
@@ -13386,7 +13587,21 @@
     "totalSeats": {
       "TK": 19,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.788174,
+      "lng": -122.439189
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "2725 California St., San Francisco, CA 94115-2513",
+    "neighborhood": "Pacific Heights",
+    "website": "No Data",
+    "phone": "(415) 749-3505"
   },
   {
     "idSchool": 507,
@@ -13961,7 +14176,21 @@
     "totalSeats": {
       "TK": 35,
       "K": 3
-    }
+    },
+    "coords": {
+      "lat": 37.731779,
+      "lng": -122.39355
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "50 Pomona Ave., San Francisco, CA 94124-2344",
+    "neighborhood": "Bayview Hunters Point",
+    "website": "No Data",
+    "phone": "(415) 330-1526"
   },
   {
     "idSchool": 521,
@@ -14722,7 +14951,23 @@
     "totalSeats": {
       "TK": 44,
       "K": 7
-    }
+    },
+    "coords": {
+      "lat": 37.719265,
+      "lng": -122.406737
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Autism Focus (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "70 Delta St., San Francisco, CA 94134-2145",
+    "neighborhood": "McLaren Park",
+    "website": "No Data",
+    "phone": "(415) 330-1537"
   },
   {
     "idSchool": 539,
@@ -15721,7 +15966,21 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.739964,
+      "lng": -122.481857
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "2550 25th Ave., San Francisco, CA 94116-2901",
+    "neighborhood": "Sunset/Parkside",
+    "website": "No Data",
+    "phone": "(415) 615-8460"
   },
   {
     "idSchool": 680,
@@ -17876,7 +18135,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.74819,
+      "lng": -122.412037
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "3125 Cesar Chavez St., San Francisco, CA 94110-4722",
+    "neighborhood": "Bernal Heights",
+    "website": "No Data",
+    "phone": "(415) 695-5770"
   },
   {
     "idSchool": 562,
@@ -19178,7 +19453,25 @@
     "totalSeats": {
       "TK": 0,
       "K": 6
-    }
+    },
+    "coords": {
+      "lat": 37.8018,
+      "lng": -122.406734
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Cantonese Immersion"
+      ],
+      "specialEd": [
+        "Autism Focus (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "420 Filbert St., San Francisco, CA 94133-3002",
+    "neighborhood": "North Beach",
+    "website": "No Data",
+    "phone": "(415) 291-7924"
   },
   {
     "idSchool": 575,
@@ -20109,7 +20402,25 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.733107,
+      "lng": -122.436088
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Biliteracy"
+      ],
+      "specialEd": [
+        "Sheltered (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "151 Lippard Ave., San Francisco, CA 94131-3249",
+    "neighborhood": "West of Twin Peaks",
+    "website": "No Data",
+    "phone": "(415) 469-4713"
   },
   {
     "idSchool": 589,
@@ -21238,7 +21549,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.763858,
+      "lng": -122.450526
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Sheltered (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "165 Grattan St., San Francisco, CA 94117-4208",
+    "neighborhood": "Haight Ashbury",
+    "website": "No Data",
+    "phone": "(415) 759-2815"
   },
   {
     "idSchool": 593,
@@ -22098,7 +22425,23 @@
     "totalSeats": {
       "TK": 8,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.710438,
+      "lng": -122.434416
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Biliteracy"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "859 Prague St., San Francisco, CA 94112-4516",
+    "neighborhood": "Excelsior",
+    "website": "No Data",
+    "phone": "(415) 469-4718"
   },
   {
     "idSchool": 453,
@@ -22947,7 +23290,23 @@
     "totalSeats": {
       "TK": 33,
       "K": 4
-    }
+    },
+    "coords": {
+      "lat": 37.71861,
+      "lng": -122.388897
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "1035 Gilman Ave., San Francisco, CA 94124-3710",
+    "neighborhood": "Bayview Hunters Point",
+    "website": "No Data",
+    "phone": "(415) 330-1520"
   },
   {
     "idSchool": 614,
@@ -24073,7 +24432,25 @@
     "totalSeats": {
       "TK": 10,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.729026,
+      "lng": -122.419248
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Biliteracy"
+      ],
+      "specialEd": [
+        "Mild to Moderate (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "810 Silver Ave., San Francisco, CA 94134-1012",
+    "neighborhood": "Excelsior",
+    "website": "No Data",
+    "phone": "(415) 469-4722"
   },
   {
     "idSchool": 537,
@@ -25572,7 +25949,25 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.740659,
+      "lng": -122.425596
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Immersion"
+      ],
+      "specialEd": [
+        "Extensive Support (SDC)"
+      ],
+      "hasGeneralEd": false
+    },
+    "address": "65 Chenery St., San Francisco, CA 94131-2706",
+    "neighborhood": "Glen Park",
+    "website": "No Data",
+    "phone": "(415) 695-5669"
   },
   {
     "idSchool": 644,
@@ -26266,7 +26661,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.763555,
+      "lng": -122.476359
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Autism Focus (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "1725 Irving St., San Francisco, CA 94122-1893",
+    "neighborhood": "Inner Sunset",
+    "website": "No Data",
+    "phone": "(415) 759-2821"
   },
   {
     "idSchool": 544,
@@ -27403,7 +27814,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.758154,
+      "lng": -122.502495
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Extensive Support (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "1530 43rd Ave., San Francisco, CA 94122-2925",
+    "neighborhood": "Sunset/Parkside",
+    "website": "No Data",
+    "phone": "(415) 759-2811"
   },
   {
     "idSchool": 838,
@@ -29126,7 +29553,25 @@
     "totalSeats": {
       "TK": 0,
       "K": 6
-    }
+    },
+    "coords": {
+      "lat": 37.752765,
+      "lng": -122.399351
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Mandarin Immersion"
+      ],
+      "specialEd": [
+        "Sheltered (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "1215 Carolina St., San Francisco, CA 94107-3322",
+    "neighborhood": "Potrero Hill",
+    "website": "No Data",
+    "phone": "(415) 695-5797"
   },
   {
     "idSchool": 664,
@@ -30134,7 +30579,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.777608,
+      "lng": -122.496889
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Auditory/Oral (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "4545 Anza St., San Francisco, CA 94121-2621",
+    "neighborhood": "Outer Richmond",
+    "website": "No Data",
+    "phone": "(415) 750-8483"
   },
   {
     "idSchool": 670,
@@ -31383,7 +31844,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 20
-    }
+    },
+    "coords": {
+      "lat": 37.730603,
+      "lng": -122.486151
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Autism Focus (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "220 Middlefield Dr., San Francisco, CA 94132-1418",
+    "neighborhood": "Lakeshore",
+    "website": "No Data",
+    "phone": "(415) 759-2825"
   },
   {
     "idSchool": 490,
@@ -32467,7 +32944,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 6
-    }
+    },
+    "coords": {
+      "lat": 37.793981,
+      "lng": -122.408687
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Cantonese Biliteracy"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "950 Clay St., San Francisco, CA 94108-1521",
+    "neighborhood": "Chinatown",
+    "website": "No Data",
+    "phone": "(415) 291-7921"
   },
   {
     "idSchool": 676,
@@ -33287,7 +33780,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.757952,
+      "lng": -122.489587
+    },
+    "tags": {
+      "schoolType": "K8",
+      "languages": [],
+      "specialEd": [
+        "Extensive Support (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "1570 31st Ave., San Francisco, CA 94122-3104",
+    "neighborhood": "Sunset/Parkside",
+    "website": "No Data",
+    "phone": "(415) 759-2832"
   },
   {
     "idSchool": 479,
@@ -34186,7 +34695,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.803192,
+      "lng": -122.443502
+    },
+    "tags": {
+      "schoolType": "K8",
+      "languages": [
+        "Korean Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "3630 Divisadero St., San Francisco, CA 94123-1411",
+    "neighborhood": "Marina",
+    "website": "No Data",
+    "phone": "(415) 749-3516"
   },
   {
     "idSchool": 691,
@@ -35317,7 +35842,26 @@
     "totalSeats": {
       "TK": 0,
       "K": 2
-    }
+    },
+    "coords": {
+      "lat": 37.71046,
+      "lng": -122.447692
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Filipino FLES",
+        "Spanish Biliteracy"
+      ],
+      "specialEd": [
+        "Mild to Moderate (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "755 Morse St., San Francisco, CA 94112-4223",
+    "neighborhood": "Excelsior",
+    "website": "No Data",
+    "phone": "(415) 469-4730"
   },
   {
     "idSchool": 830,
@@ -35684,7 +36228,21 @@
     "totalSeats": {
       "TK": 42,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.733734,
+      "lng": -122.380617
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "350 Harbor Rd., San Francisco, CA 94124-2474",
+    "neighborhood": "Bayview Hunters Point",
+    "website": "No Data",
+    "phone": "(415) 695-5950"
   },
   {
     "idSchool": 714,
@@ -36322,7 +36880,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 1
-    }
+    },
+    "coords": {
+      "lat": 37.766679,
+      "lng": -122.419099
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": false
+    },
+    "address": "1575 15th St., San Francisco, CA 94103-3639",
+    "neighborhood": "Mission",
+    "website": "No Data",
+    "phone": "(415) 241-6280"
   },
   {
     "idSchool": 549,
@@ -37233,7 +37807,21 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.776283,
+      "lng": -122.464018
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "651 Sixth Ave., San Francisco, CA 94118-3804",
+    "neighborhood": "Inner Richmond",
+    "website": "No Data",
+    "phone": "(415) 750-8475"
   },
   {
     "idSchool": 718,
@@ -38301,7 +38889,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.767229,
+      "lng": -122.436594
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Autism Focus (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "1025 14th St., San Francisco, CA 94114-1221",
+    "neighborhood": "Castro/Upper Market",
+    "website": "No Data",
+    "phone": "(415) 241-6300"
   },
   {
     "idSchool": 950,
@@ -38977,7 +39581,23 @@
     "totalSeats": {
       "TK": 71,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.713557,
+      "lng": -122.421911
+    },
+    "tags": {
+      "schoolType": "EarlyEd",
+      "languages": [
+        "Spanish Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "2055 Sunnydale Ave., San Francisco, CA 94134-2611",
+    "neighborhood": "McLaren Park",
+    "website": "No Data",
+    "phone": "(415) 469-4519"
   },
   {
     "idSchool": 505,
@@ -39984,7 +40604,21 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.759148,
+      "lng": -122.43634
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "4235 19th St., San Francisco, CA 94114-2415",
+    "neighborhood": "Castro/Upper Market",
+    "website": "No Data",
+    "phone": "(415) 241-6276"
   },
   {
     "idSchool": 722,
@@ -41060,7 +41694,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.739309,
+      "lng": -122.450214
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Autism Focus (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "175 Omar Way, San Francisco, CA 94127-1701",
+    "neighborhood": "West of Twin Peaks",
+    "website": "No Data",
+    "phone": "(415) 469-4734"
   },
   {
     "idSchool": 1731,
@@ -42037,6 +42687,15 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
+    },
+    "coords": null,
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Mild to Moderate (SDC)"
+      ],
+      "hasGeneralEd": true
     }
   },
   {
@@ -43381,7 +44040,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.742282,
+      "lng": -122.431061
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": false
+    },
+    "address": "1670 Noe St., San Francisco, CA 94131-2357",
+    "neighborhood": "Noe Valley",
+    "website": "No Data",
+    "phone": "(415) 695-5313"
   },
   {
     "idSchool": 729,
@@ -44829,7 +45504,24 @@
     "totalSeats": {
       "TK": 0,
       "K": 1
-    }
+    },
+    "coords": {
+      "lat": 37.725224,
+      "lng": -122.430121
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Cantonese Biliteracy",
+        "Spanish Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "260 Madrid St., San Francisco, CA 94112-2055",
+    "neighborhood": "Excelsior",
+    "website": "No Data",
+    "phone": "(415) 469-4736"
   },
   {
     "idSchool": 723,
@@ -46142,7 +46834,24 @@
     "totalSeats": {
       "TK": 0,
       "K": 2
-    }
+    },
+    "coords": {
+      "lat": 37.756242,
+      "lng": -122.412303
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Cantonese Biliteracy",
+        "Spanish Biliteracy"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "2576 Harrison St., San Francisco, CA 94110-2720",
+    "neighborhood": "Mission",
+    "website": "No Data",
+    "phone": "(415) 695-5736"
   },
   {
     "idSchool": 650,
@@ -47242,7 +47951,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.773688,
+      "lng": -122.429094
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Biliteracy"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "380 Webster St., San Francisco, CA 94117-3512",
+    "neighborhood": "Hayes Valley",
+    "website": "No Data",
+    "phone": "(415) 241-6335"
   },
   {
     "idSchool": 735,
@@ -47747,7 +48472,21 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.77431,
+      "lng": -122.450324
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "2049 Grove St., San Francisco, CA 94117-1123",
+    "neighborhood": "Lone Mountain/USF",
+    "website": "No Data",
+    "phone": "(415) 750-8490"
   },
   {
     "idSchool": 928,
@@ -48547,7 +49286,21 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.753466,
+      "lng": -122.503387
+    },
+    "tags": {
+      "schoolType": "EarlyEd",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "1775 44th Ave., San Francisco, CA 94122-4013",
+    "neighborhood": "Sunset/Parkside",
+    "website": "No Data",
+    "phone": "(415) 759-2853"
   },
   {
     "idSchool": 746,
@@ -50140,7 +50893,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 2
-    }
+    },
+    "coords": {
+      "lat": 37.716168,
+      "lng": -122.466259
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Mandarin Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "400 Sargent St., San Francisco, CA 94132-3152",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "website": "No Data",
+    "phone": "(415) 469-4726"
   },
   {
     "idSchool": 638,
@@ -50739,7 +51508,21 @@
     "totalSeats": {
       "TK": 21,
       "K": 8
-    }
+    },
+    "coords": {
+      "lat": 37.797323,
+      "lng": -122.411105
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "840 Broadway St., San Francisco, CA 94133-4219",
+    "neighborhood": "Chinatown",
+    "website": "No Data",
+    "phone": "(415) 291-7990"
   },
   {
     "idSchool": 786,
@@ -52486,7 +53269,25 @@
     "totalSeats": {
       "TK": 19,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.783681,
+      "lng": -122.429454
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Japanese Bilingual"
+      ],
+      "specialEd": [
+        "Autism Focus (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "1501 O'Farrell St., San Francisco, CA 94115-3762",
+    "neighborhood": "Western Addition",
+    "website": "No Data",
+    "phone": "(415) 749-3519"
   },
   {
     "idSchool": 569,
@@ -53172,7 +53973,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.783947,
+      "lng": -122.464567
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Mild to Moderate (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "251 Sixth Ave., San Francisco, CA 94118-2311",
+    "neighborhood": "Inner Richmond",
+    "website": "No Data",
+    "phone": "(415) 750-8480"
   },
   {
     "idSchool": 790,
@@ -53973,7 +54790,23 @@
     "totalSeats": {
       "TK": 37,
       "K": 17
-    }
+    },
+    "coords": {
+      "lat": 37.789726,
+      "lng": -122.419215
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Sheltered (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "1421 Pine St., San Francisco, CA 94109-4719",
+    "neighborhood": "Nob Hill",
+    "website": "No Data",
+    "phone": "(415) 749-3525"
   },
   {
     "idSchool": 760,
@@ -55123,7 +55956,25 @@
     "totalSeats": {
       "TK": 36,
       "K": 8
-    }
+    },
+    "coords": {
+      "lat": 37.737142,
+      "lng": -122.413174
+    },
+    "tags": {
+      "schoolType": "K8",
+      "languages": [
+        "Spanish Immersion"
+      ],
+      "specialEd": [
+        "Mild to Moderate (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "555 Tompkins Ave., San Francisco, CA 94110-6144",
+    "neighborhood": "Bernal Heights",
+    "website": "No Data",
+    "phone": "(415) 695-5656"
   },
   {
     "idSchool": 965,
@@ -55603,6 +56454,15 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
+    },
+    "coords": null,
+    "tags": {
+      "schoolType": "EarlyEd",
+      "languages": [
+        "Spanish Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": false
     }
   },
   {
@@ -56402,7 +57262,21 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.754418,
+      "lng": -122.443888
+    },
+    "tags": {
+      "schoolType": "K8",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "443 Burnett Ave., San Francisco, CA 94131-1330",
+    "neighborhood": "Twin Peaks",
+    "website": "No Data",
+    "phone": "(415) 695-5692"
   },
   {
     "idSchool": 987,
@@ -56994,7 +57868,21 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.721211,
+      "lng": -122.444754
+    },
+    "tags": {
+      "schoolType": "EarlyEd",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "300 Seneca Ave., San Francisco, CA 94112-3248",
+    "neighborhood": "Outer Mission",
+    "website": "No Data",
+    "phone": "(415) 469-4756"
   },
   {
     "idSchool": 816,
@@ -58363,7 +59251,25 @@
     "totalSeats": {
       "TK": 12,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.763967,
+      "lng": -122.430768
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Biliteracy"
+      ],
+      "specialEd": [
+        "Mild to Moderate (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "325 Sanchez St., San Francisco, CA 94114-1615",
+    "neighborhood": "Castro/Upper Market",
+    "website": "No Data",
+    "phone": "(415) 241-6380"
   },
   {
     "idSchool": 955,
@@ -59099,7 +60005,21 @@
     "totalSeats": {
       "TK": 11,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.736733,
+      "lng": -122.421137
+    },
+    "tags": {
+      "schoolType": "EarlyEd",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "625 Holly Park Cir., San Francisco, CA 94110-5815",
+    "neighborhood": "Bernal Heights",
+    "website": "No Data",
+    "phone": "(415) 695-5685"
   },
   {
     "idSchool": 656,
@@ -60239,7 +61159,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.736733,
+      "lng": -122.421137
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Biliteracy"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "625 Holly Park Cir., San Francisco, CA 94110-5815",
+    "neighborhood": "Bernal Heights",
+    "website": "No Data",
+    "phone": "(415) 695-5685"
   },
   {
     "idSchool": 493,
@@ -60886,6 +61822,13 @@
     "totalSeats": {
       "TK": 7,
       "K": 4
+    },
+    "coords": null,
+    "tags": {
+      "schoolType": "K8",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
     }
   },
   {
@@ -61733,6 +62676,13 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
+    },
+    "coords": null,
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
     }
   },
   {
@@ -62444,7 +63394,21 @@
     "totalSeats": {
       "TK": 0,
       "K": 23
-    }
+    },
+    "coords": {
+      "lat": 37.714331,
+      "lng": -122.459134
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "431 Capitol Ave., San Francisco, CA 94112-2934",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "website": "No Data",
+    "phone": "(415) 469-4743"
   },
   {
     "idSchool": 823,
@@ -63661,7 +64625,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.798273,
+      "lng": -122.426203
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Autism Focus (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "1651 Union St., San Francisco, CA 94123-4506",
+    "neighborhood": "Marina",
+    "website": "No Data",
+    "phone": "(415) 749-3530"
   },
   {
     "idSchool": 488,
@@ -64206,7 +65186,21 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.731881,
+      "lng": -122.470965
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "50 Darien Way, San Francisco, CA 94127-1902",
+    "neighborhood": "West of Twin Peaks",
+    "website": "No Data",
+    "phone": "(415) 759-2807"
   },
   {
     "idSchool": 834,
@@ -65047,7 +66041,23 @@
     "totalSeats": {
       "TK": 38,
       "K": 2
-    }
+    },
+    "coords": {
+      "lat": 37.794403,
+      "lng": -122.418992
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Mild to Moderate (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "1451 Jackson St., San Francisco, CA 94109-3115",
+    "neighborhood": "Russian Hill",
+    "website": "No Data",
+    "phone": "(415) 749-3535"
   },
   {
     "idSchool": 782,
@@ -66288,7 +67298,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.748857,
+      "lng": -122.4923
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Mild to Moderate (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "2051 34th Ave., San Francisco, CA 94116-1109",
+    "neighborhood": "Sunset/Parkside",
+    "website": "No Data",
+    "phone": "(415) 759-2837"
   },
   {
     "idSchool": 915,
@@ -66586,7 +67612,21 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.795046,
+      "lng": -122.408832
+    },
+    "tags": {
+      "schoolType": "EarlyEd",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "1 Trenton St., San Francisco, CA 94108-1112",
+    "neighborhood": "Chinatown",
+    "website": "No Data",
+    "phone": "(415) 291-7932"
   },
   {
     "idSchool": 842,
@@ -67208,7 +68248,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.730307,
+      "lng": -122.448794
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Extensive Support (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "250 Foerster St., San Francisco, CA 94112-1341",
+    "neighborhood": "West of Twin Peaks",
+    "website": "https://www.sunnysidesf.org/",
+    "phone": "(415) 469-4746"
   },
   {
     "idSchool": 750,
@@ -67806,7 +68862,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.750743,
+      "lng": -122.499799
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Sheltered (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "1920 41st Ave., San Francisco, CA 94116-1101",
+    "neighborhood": "Sunset/Parkside",
+    "website": "No Data",
+    "phone": "(415) 759-2760"
   },
   {
     "idSchool": 848,
@@ -68954,7 +70026,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.783932,
+      "lng": -122.471025
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Cantonese Biliteracy"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "235 12th Ave., San Francisco, CA 94118-2103",
+    "neighborhood": "Inner Richmond",
+    "website": "No Data",
+    "phone": "(415) 750-8525"
   },
   {
     "idSchool": 513,
@@ -70392,7 +71480,26 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.728,
+      "lng": -122.407332
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Cantonese Biliteracy",
+        "Spanish Biliteracy"
+      ],
+      "specialEd": [
+        "Autism Focus (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "423 Burrows St., San Francisco, CA 94134-1449",
+    "neighborhood": "Portola",
+    "website": "No Data",
+    "phone": "(415) 330-1530"
   },
   {
     "idSchool": 859,
@@ -71161,7 +72268,23 @@
     "totalSeats": {
       "TK": 30,
       "K": 6
-    }
+    },
+    "coords": {
+      "lat": 37.782061,
+      "lng": -122.419799
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Autism Focus (SDC)"
+      ],
+      "hasGeneralEd": true
+    },
+    "address": "627 Turk St., San Francisco, CA 94102-3212",
+    "neighborhood": "Tenderloin",
+    "website": "No Data",
+    "phone": "(415) 749-3567"
   },
   {
     "idSchool": 997,
@@ -72349,7 +73472,21 @@
     "totalSeats": {
       "TK": 9,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.799407,
+      "lng": -122.434534
+    },
+    "tags": {
+      "schoolType": "EarlyEd",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "2110 Greenwich St., San Francisco, CA 94123-3405",
+    "neighborhood": "Marina",
+    "website": "No Data",
+    "phone": "(415) 749-3551"
   },
   {
     "idSchool": 862,
@@ -73641,7 +74778,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.737302,
+      "lng": -122.499954
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Cantonese Biliteracy"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "2650 42nd Ave., San Francisco, CA 94116-2714",
+    "neighborhood": "Sunset/Parkside",
+    "website": "No Data",
+    "phone": "(415) 759-2841"
   },
   {
     "idSchool": 867,
@@ -74304,7 +75457,21 @@
     "totalSeats": {
       "TK": 14,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.71268,
+      "lng": -122.410365
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "55 Schwerin St., San Francisco, CA 94134-2742",
+    "neighborhood": "Visitacion Valley",
+    "website": "No Data",
+    "phone": "(415) 469-4796"
   },
   {
     "idSchool": 497,
@@ -75539,7 +76706,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.760489,
+      "lng": -122.396236
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Spanish Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "465 Missouri St., San Francisco, CA 94107-2826",
+    "neighborhood": "Potrero Hill",
+    "website": "No Data",
+    "phone": "(415) 695-5787"
   },
   {
     "idSchool": 876,
@@ -77212,7 +78395,23 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.743572,
+      "lng": -122.464683
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [
+        "Cantonese Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": true
+    },
+    "address": "5 Lenox Way, San Francisco, CA 94127-1111",
+    "neighborhood": "West of Twin Peaks",
+    "website": "No Data",
+    "phone": "(415) 759-2846"
   },
   {
     "idSchool": 801,
@@ -77778,6 +78977,18 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
+    },
+    "coords": {
+      "lng": -122.42307335603111,
+      "lat": 37.807956422179025
+    },
+    "tags": {
+      "schoolType": "ES",
+      "languages": [],
+      "specialEd": [
+        "Sheltered (SDC)"
+      ],
+      "hasGeneralEd": true
     }
   },
   {
@@ -78512,6 +79723,22 @@
     "totalSeats": {
       "TK": 0,
       "K": 0
-    }
+    },
+    "coords": {
+      "lat": 37.759405,
+      "lng": -122.469314
+    },
+    "tags": {
+      "schoolType": "K8",
+      "languages": [
+        "Cantonese Immersion"
+      ],
+      "specialEd": [],
+      "hasGeneralEd": false
+    },
+    "address": "1541 12th Ave., San Francisco, CA 94122-3503",
+    "neighborhood": "Inner Sunset",
+    "website": "No Data",
+    "phone": "(415) 759-2764"
   }
 ]

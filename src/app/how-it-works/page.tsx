@@ -27,17 +27,17 @@ export default function HowItWorks() {
           </p>
           <ul className="flex flex-col gap-3 text-[15px]">
             <li className="p-4 rounded-2xl bg-strong-soft">
-              <strong className="text-strong">Likely</strong>: 80 percent or
+              <strong className="text-strong">Likely</strong>: 60 percent or
               more of applicants in your tiebreaker category were admitted.
             </li>
             <li className="p-4 rounded-2xl bg-likely-soft">
-              <strong className="text-likely">Possible</strong>: Between 40
-              and 80 percent of applicants in your tiebreaker category were
+              <strong className="text-likely">Possible</strong>: Between 30
+              and 60 percent of applicants in your tiebreaker category were
               admitted.
             </li>
             <li className="p-4 rounded-2xl bg-stretch-soft">
               <strong className="text-stretch">Competitive</strong>: Fewer
-              than 40 percent of applicants in your tiebreaker category were
+              than 30 percent of applicants in your tiebreaker category were
               admitted. Demand for the school exceeds available seats.
             </li>
           </ul>

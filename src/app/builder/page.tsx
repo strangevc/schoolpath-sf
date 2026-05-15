@@ -29,7 +29,7 @@ import type { ListItem, Situation } from "@/lib/types";
 import SortableRow, { tierCount } from "@/components/SortableRow";
 import CompositionBar from "@/components/CompositionBar";
 import Coach, { computeNudges } from "@/components/Coach";
-import TierBadge from "@/components/TierBadge";
+import Suggestions from "@/components/Suggestions";
 import AddSchoolsDrawer from "@/components/AddSchoolsDrawer";
 
 export default function BuilderPage() {
@@ -319,11 +319,30 @@ export default function BuilderPage() {
               </SortableContext>
             </DndContext>
 
+            <Suggestions
+              situation={situation}
+              list={list}
+              counts={counts}
+              onAdd={(item) =>
+                setList((l) => {
+                  if (
+                    l.some(
+                      (x) =>
+                        x.schoolId === item.schoolId &&
+                        x.programCode === item.programCode
+                    )
+                  )
+                    return l;
+                  return [...l, item];
+                })
+              }
+            />
+
             <button
               onClick={() => setDrawerOpen(true)}
               className="self-start h-12 px-5 rounded-full border border-ink text-ink text-[15px] font-medium hover:bg-ink hover:text-paper transition-colors"
             >
-              Add schools
+              Browse all schools with filters
             </button>
           </div>
 

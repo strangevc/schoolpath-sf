@@ -43,20 +43,19 @@ export default function Home() {
             <div className="p-4 rounded-2xl bg-strong-soft">
               <div className="font-semibold text-strong">Likely</div>
               <div className="text-muted mt-1 leading-[1.5]">
-                Most families with your tiebreakers have been admitted here in
-                recent years.
+                60% or more of applicants with your tiebreakers were admitted.
               </div>
             </div>
             <div className="p-4 rounded-2xl bg-likely-soft">
               <div className="font-semibold text-likely">Possible</div>
               <div className="text-muted mt-1 leading-[1.5]">
-                About half of similar applicants have been admitted.
+                Between 30% and 60% of similar applicants were admitted.
               </div>
             </div>
             <div className="p-4 rounded-2xl bg-stretch-soft">
               <div className="font-semibold text-stretch">Competitive</div>
               <div className="text-muted mt-1 leading-[1.5]">
-                High demand. Most applicants are not admitted.
+                Fewer than 30% of similar applicants were admitted.
               </div>
             </div>
           </div>

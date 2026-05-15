@@ -99,10 +99,6 @@ export default function StartPage() {
         <h1 className="mt-6 text-[34px] md:text-[44px] leading-[1.1] font-semibold tracking-tight">
           About your family
         </h1>
-        <p className="mt-3 text-muted text-[16px] md:text-[17px] leading-[1.6]">
-          Your information stays on your device. We do not collect or
-          transmit any personal data.
-        </p>
 
         <form onSubmit={handleSubmit} className="mt-10 flex flex-col gap-9">
           <Field
