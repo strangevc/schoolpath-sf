@@ -99,7 +99,7 @@ function buildStatsLine(
 
   const summary =
     stats.pctSuccess !== null
-      ? `got this school, or a school they preferred more.`
+      ? `placement rate: this school or one ranked higher in their list.`
       : `Not enough recent applicants to estimate placement.`;
 
   return { statsLine, summary };

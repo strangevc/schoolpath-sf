@@ -18,12 +18,23 @@ export default function HowItWorks() {
         </p>
 
         <section className="flex flex-col gap-3">
-          <h2 className="text-[22px] font-semibold">School categories</h2>
+          <h2 className="text-[22px] font-semibold">
+            What the placement rate means
+          </h2>
           <p className="text-muted text-[15px] leading-[1.7]">
-            For each school, grade, and program, SchoolPath SF looks at how
-            often applicants in your specific tiebreaker category were
-            admitted over the past four years and groups schools into three
-            categories.
+            The big percentage on each school card is the four-year average{" "}
+            <em>placement rate</em>: of applicants in your specific
+            tiebreaker tier who included this school somewhere on their list,
+            what share were placed at this school <em>or</em> at a school they
+            ranked higher in their list. SFUSD&rsquo;s deferred acceptance
+            algorithm places each applicant at the highest-ranked school it
+            can match them to, so a parent who ranked Flynn third and ended
+            up at their first choice still counts as a successful placement.
+            This is the most useful single number when deciding whether to
+            include a school on your list.
+          </p>
+          <p className="text-muted text-[15px] leading-[1.7]">
+            Schools are then grouped into three categories.
           </p>
           <ul className="flex flex-col gap-3 text-[15px]">
             <li className="p-4 rounded-2xl bg-strong-soft">

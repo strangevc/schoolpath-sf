@@ -99,7 +99,7 @@ export default function SortableRow({
             <span className="font-medium tabular-nums">
               {Math.round(odds.pctSuccess * 100)}%
             </span>{" "}
-            of applicants like you {odds.summary}
+            {odds.summary}
           </div>
         )}
         <div className="text-[11px] text-muted mt-1.5">
