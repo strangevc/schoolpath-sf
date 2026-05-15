@@ -77,16 +77,32 @@ function fmtPct(p: number | null): string {
   return `${Math.round(p * 100)}%`;
 }
 
-function plainPhrase(p: SchoolProgram, stats: TierStats, grade: Grade): string {
-  const seats = stats.assigned;
-  const reqs = stats.requests;
-  const pctSuccess = stats.pctSuccess;
-  if (reqs === 0) return "Too few past applicants to estimate placement.";
-  const fam =
-    pctSuccess !== null
-      ? `Of applicants with your tiebreakers, ${fmtPct(pctSuccess)} were admitted.`
-      : "";
-  return `${Math.round(reqs)} applied for about ${Math.round(seats || 0)} seats in this program (${grade} ${p.pathway}, 4-year average). ${fam}`.trim();
+function buildStatsLine(
+  p: SchoolProgram,
+  stats: TierStats,
+  grade: Grade
+): { statsLine: string; summary: string } {
+  const tierReqs = Math.round(stats.requests);
+  const totalSeats = Math.round(p.tiers.all.assigned || 0);
+  if (tierReqs === 0 && totalSeats === 0) {
+    return {
+      statsLine: "",
+      summary: "Too few past applicants to estimate placement.",
+    };
+  }
+
+  const parts: string[] = [];
+  if (totalSeats > 0) parts.push(`${totalSeats} seats / yr`);
+  if (tierReqs > 0) parts.push(`${tierReqs} applicants in your tier`);
+  parts.push("4-yr avg");
+  const statsLine = parts.join(" · ");
+
+  const summary =
+    stats.pctSuccess !== null
+      ? `Placed at this school or one they ranked higher.`
+      : `Not enough recent applicants to estimate placement.`;
+
+  return { statsLine, summary };
 }
 
 export function oddsFor(
@@ -97,15 +113,22 @@ export function oddsFor(
   const ut = userTierFor(situation, school, program);
   const { tier, stats } = statsForUser(program, ut);
   const why = TIER_LABEL[ut];
+  const { statsLine, summary } = buildStatsLine(
+    program,
+    stats,
+    situation.grade
+  );
   return {
     tier: tierFromSuccess(stats.pctSuccess),
     appliesTier: tier,
     pctSuccess: stats.pctSuccess,
     pctAssigned: stats.pctAssigned,
-    requests: stats.requests,
-    seats: stats.assigned,
+    tierRequests: stats.requests,
+    tierAssigned: stats.assigned,
+    totalSeats: Math.round(program.tiers.all.assigned || 0),
     why,
-    oddsPhrase: plainPhrase(program, stats, situation.grade),
+    statsLine,
+    summary,
   };
 }
 

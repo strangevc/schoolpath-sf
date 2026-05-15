@@ -12,15 +12,27 @@ import {
 } from "@/lib/geocode";
 import type { Grade, Situation } from "@/lib/types";
 
-const MATTERS_OPTIONS = [
-  "Walking distance",
-  "Language immersion",
-  "Strong aftercare",
-  "Arts",
-  "Sports / outdoors",
-  "Small school",
-  "Special education support",
-  "Diverse community",
+const LANGUAGE_OPTIONS = [
+  "Cantonese Immersion",
+  "Cantonese Biliteracy",
+  "Mandarin Immersion",
+  "Spanish Immersion",
+  "Spanish Biliteracy",
+  "Japanese Bilingual",
+  "Korean Immersion",
+  "Filipino FLES",
+];
+
+const SCHOOL_TYPES = [
+  { value: "ES", label: "K-5 elementary" },
+  { value: "K8", label: "K-8" },
+  { value: "EarlyEd", label: "Early Education site" },
+];
+
+const DISTANCE_OPTIONS: { value: number; label: string }[] = [
+  { value: 1, label: "Within 1 mi" },
+  { value: 2, label: "Within 2 mi" },
+  { value: 3, label: "Within 3 mi" },
 ];
 
 export default function StartPage() {
@@ -33,17 +45,20 @@ export default function StartPage() {
   const [siblingSchoolId, setSiblingSchoolId] = useState<number | undefined>();
   const [inPrek, setInPrek] = useState(false);
   const [prekSiteId, setPrekSiteId] = useState<number | undefined>();
-  const [matters, setMatters] = useState<string[]>([]);
+  const [languages, setLanguages] = useState<string[]>([]);
+  const [schoolTypes, setSchoolTypes] = useState<string[]>([]);
+  const [maxDist, setMaxDist] = useState<number | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
   const tkSchools = schoolsWithGrade("TK");
   const kSchools = schoolsWithGrade("K");
   const allElem = [...new Set([...tkSchools, ...kSchools])];
 
-  const toggleMatters = (opt: string) =>
-    setMatters((m) =>
-      m.includes(opt) ? m.filter((x) => x !== opt) : [...m, opt]
-    );
+  const toggleIn = (
+    list: string[],
+    setter: (v: string[]) => void,
+    opt: string
+  ) => setter(list.includes(opt) ? list.filter((x) => x !== opt) : [...list, opt]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -84,7 +99,12 @@ export default function StartPage() {
       isCTIP1: address && MAPBOX_TOKEN ? detectedCTIP : ctip1 === "yes",
       siblingSchoolId: hasSibling ? siblingSchoolId : undefined,
       prekSiteId: inPrek ? prekSiteId : undefined,
-      matters,
+      prefs: {
+        languages,
+        schoolTypes,
+        neighborhoods: [],
+        maxDistanceMi: maxDist,
+      },
     };
     saveSituation(s);
     router.push("/builder");
@@ -249,24 +269,87 @@ export default function StartPage() {
           </Field>
 
           <Field
-            label="Priorities (optional)"
-            help="Used to surface schools that may match your priorities. Select any that apply."
+            label="Language program (optional)"
+            help="Filter for schools that offer specific language programs."
           >
             <div className="flex flex-wrap gap-2">
-              {MATTERS_OPTIONS.map((opt) => {
-                const active = matters.includes(opt);
+              {LANGUAGE_OPTIONS.map((opt) => {
+                const active = languages.includes(opt);
                 return (
                   <button
                     key={opt}
                     type="button"
-                    onClick={() => toggleMatters(opt)}
-                    className={`px-4 h-10 rounded-full border text-[14px] transition-colors ${
+                    onClick={() => toggleIn(languages, setLanguages, opt)}
+                    className={`px-3 h-9 rounded-full border text-[13px] transition-colors ${
                       active
                         ? "border-ink bg-ink text-paper"
                         : "border-rule hover:bg-rule/40"
                     }`}
                   >
                     {opt}
+                  </button>
+                );
+              })}
+            </div>
+          </Field>
+
+          <Field
+            label="School type (optional)"
+            help="Limit your search to specific school types."
+          >
+            <div className="flex flex-wrap gap-2">
+              {SCHOOL_TYPES.map((opt) => {
+                const active = schoolTypes.includes(opt.value);
+                return (
+                  <button
+                    key={opt.value}
+                    type="button"
+                    onClick={() =>
+                      toggleIn(schoolTypes, setSchoolTypes, opt.value)
+                    }
+                    className={`px-3 h-9 rounded-full border text-[13px] transition-colors ${
+                      active
+                        ? "border-ink bg-ink text-paper"
+                        : "border-rule hover:bg-rule/40"
+                    }`}
+                  >
+                    {opt.label}
+                  </button>
+                );
+              })}
+            </div>
+          </Field>
+
+          <Field
+            label="Maximum distance from home (optional)"
+            help="Limit schools to within a certain distance."
+          >
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => setMaxDist(null)}
+                className={`px-3 h-9 rounded-full border text-[13px] transition-colors ${
+                  maxDist == null
+                    ? "border-ink bg-ink text-paper"
+                    : "border-rule hover:bg-rule/40"
+                }`}
+              >
+                Any distance
+              </button>
+              {DISTANCE_OPTIONS.map((opt) => {
+                const active = maxDist === opt.value;
+                return (
+                  <button
+                    key={opt.value}
+                    type="button"
+                    onClick={() => setMaxDist(opt.value)}
+                    className={`px-3 h-9 rounded-full border text-[13px] transition-colors ${
+                      active
+                        ? "border-ink bg-ink text-paper"
+                        : "border-rule hover:bg-rule/40"
+                    }`}
+                  >
+                    {opt.label}
                   </button>
                 );
               })}

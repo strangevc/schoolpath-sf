@@ -52,6 +52,13 @@ export type School = {
   tags: SchoolTags;
 };
 
+export type FilterPrefs = {
+  languages: string[];
+  schoolTypes: string[];
+  neighborhoods: string[];
+  maxDistanceMi: number | null;
+};
+
 export type Situation = {
   address?: string;
   lat?: number;
@@ -65,7 +72,8 @@ export type Situation = {
   /** id of the current PreK/TK site, if any */
   prekSiteId?: number;
   prekProgramCode?: string;
-  matters: string[]; // selected chips
+  /** Filter preferences carried from intake to the builder */
+  prefs?: FilterPrefs;
 };
 
 export type Tier = "strong" | "likely" | "stretch" | "unknown";
@@ -75,12 +83,18 @@ export type ProgramOdds = {
   appliesTier: TierKey;
   pctSuccess: number | null;
   pctAssigned: number | null;
-  requests: number;
-  seats: number;
+  /** Applicants in the user's tier (annual avg) */
+  tierRequests: number;
+  /** Admits in the user's tier (annual avg) */
+  tierAssigned: number;
+  /** Total program admits per year across all tiebreakers (≈ seats) */
+  totalSeats: number;
   /** Plain-english reason this tier was assigned to the user */
   why: string;
-  /** Plain-english odds phrase, e.g. "47 applied for 22 spots last year. Families like you got in 62% of the time." */
-  oddsPhrase: string;
+  /** Compact stat line: "~25 seats/yr · 20 applicants in your tier · 4-yr avg" */
+  statsLine: string;
+  /** Short explainer of what % means */
+  summary: string;
 };
 
 export type ListItem = {

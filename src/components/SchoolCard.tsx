@@ -8,9 +8,12 @@ export type SchoolCardProps = {
   programName: string;
   tier: Tier;
   pctSuccess: number | null;
+  /** Compact stat line like "25 seats/yr · 20 applicants in your tier · 4-yr avg" */
+  statsLine?: string;
+  /** Short phrase describing what % means */
+  summary?: string;
   distanceMi?: number | null;
   reason?: string;
-  oddsPhrase?: string;
   added: boolean;
   onAdd: () => void;
   /** Optional small chips, e.g. ["Spanish Immersion", "K-8"] */
@@ -22,9 +25,10 @@ export default function SchoolCard({
   programName,
   tier,
   pctSuccess,
+  statsLine,
+  summary,
   distanceMi,
   reason,
-  oddsPhrase,
   added,
   onAdd,
   chips,
@@ -57,12 +61,30 @@ export default function SchoolCard({
           <TierBadge tier={tier} size="sm" />
         </div>
       </div>
-      <div className="text-[12px] text-muted leading-[1.55]">
-        {oddsPhrase ?? reason}
-        {distanceMi != null && (
-          <span className="text-muted">
-            {" "}· {distanceMi.toFixed(1)} mi from home
-          </span>
+      <div className="flex flex-col gap-1.5">
+        {statsLine && (
+          <div className="text-[11px] text-muted tabular-nums">
+            {statsLine}
+            {distanceMi != null && (
+              <span> · {distanceMi.toFixed(1)} mi from home</span>
+            )}
+          </div>
+        )}
+        {summary && pctSuccess !== null && (
+          <div className="text-[12px] text-ink leading-[1.5]">
+            <span className="font-medium tabular-nums">
+              {Math.round(pctSuccess * 100)}%
+            </span>{" "}
+            {summary.toLowerCase()}
+          </div>
+        )}
+        {!statsLine && reason && (
+          <div className="text-[12px] text-muted leading-[1.55]">
+            {reason}
+            {distanceMi != null && (
+              <span> · {distanceMi.toFixed(1)} mi from home</span>
+            )}
+          </div>
         )}
       </div>
       <button

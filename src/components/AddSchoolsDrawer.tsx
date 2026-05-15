@@ -43,10 +43,19 @@ export default function AddSchoolsDrawer({
 }) {
   const [q, setQ] = useState("");
   const [tierFilter, setTierFilter] = useState<Tier | "all">("all");
-  const [langFilter, setLangFilter] = useState<string[]>([]);
-  const [typeFilter, setTypeFilter] = useState<string[]>([]);
-  const [distFilter, setDistFilter] = useState<number | null>(null);
-  const [neighborhoods, setNeighborhoods] = useState<string[]>([]);
+  const [langFilter, setLangFilter] = useState<string[]>(
+    situation.prefs?.languages ?? []
+  );
+  const [typeFilter, setTypeFilter] = useState<string[]>(
+    situation.prefs?.schoolTypes ?? []
+  );
+  const [distFilter, setDistFilter] = useState<number | null>(
+    situation.prefs?.maxDistanceMi ?? null
+  );
+  const [neighborhoods, setNeighborhoods] = useState<string[]>(
+    situation.prefs?.neighborhoods ?? []
+  );
+  const [showFilters, setShowFilters] = useState(false);
 
   const onList = useMemo(() => new Set(list.map((l) => l.schoolId)), [list]);
   const home = situation.lat && situation.lng
@@ -145,46 +154,80 @@ export default function AddSchoolsDrawer({
             />
           </FilterGroup>
 
-          {home && (
-            <FilterGroup label="Distance from home">
-              <Chips
-                options={[
-                  { value: "any", label: "Any" },
-                  ...DISTANCE_OPTIONS.map((d) => ({
-                    value: String(d.value),
-                    label: d.label,
-                  })),
-                ]}
-                value={distFilter == null ? "any" : String(distFilter)}
-                onChange={(v) => setDistFilter(v === "any" ? null : Number(v))}
-              />
-            </FilterGroup>
-          )}
+          {(() => {
+            const activeCount =
+              langFilter.length +
+              typeFilter.length +
+              neighborhoods.length +
+              (distFilter != null ? 1 : 0);
+            return (
+              <button
+                type="button"
+                onClick={() => setShowFilters((v) => !v)}
+                className="self-start h-9 px-3 rounded-full border border-rule text-[13px] hover:bg-rule/40 flex items-center gap-2"
+              >
+                <span>{showFilters ? "Hide filters" : "More filters"}</span>
+                {activeCount > 0 && (
+                  <span className="inline-flex items-center justify-center min-w-5 h-5 px-1.5 rounded-full bg-ink text-paper text-[11px] font-semibold">
+                    {activeCount}
+                  </span>
+                )}
+              </button>
+            );
+          })()}
 
-          <FilterGroup label="School type">
-            <MultiChips
-              options={SCHOOL_TYPES.map((t) => ({ value: t.value, label: t.label }))}
-              value={typeFilter}
-              onChange={setTypeFilter}
-            />
-          </FilterGroup>
+          {showFilters && (
+            <div className="flex flex-col gap-3 pt-1">
+              {home && (
+                <FilterGroup label="Distance from home">
+                  <Chips
+                    options={[
+                      { value: "any", label: "Any" },
+                      ...DISTANCE_OPTIONS.map((d) => ({
+                        value: String(d.value),
+                        label: d.label,
+                      })),
+                    ]}
+                    value={distFilter == null ? "any" : String(distFilter)}
+                    onChange={(v) =>
+                      setDistFilter(v === "any" ? null : Number(v))
+                    }
+                  />
+                </FilterGroup>
+              )}
 
-          <FilterGroup label="Language program">
-            <MultiChips
-              options={LANGUAGE_OPTIONS.map((l) => ({ value: l, label: l }))}
-              value={langFilter}
-              onChange={setLangFilter}
-            />
-          </FilterGroup>
+              <FilterGroup label="School type">
+                <MultiChips
+                  options={SCHOOL_TYPES.map((t) => ({
+                    value: t.value,
+                    label: t.label,
+                  }))}
+                  value={typeFilter}
+                  onChange={setTypeFilter}
+                />
+              </FilterGroup>
 
-          {allNeighborhoods.length > 0 && (
-            <FilterGroup label="Neighborhood">
-              <MultiChips
-                options={allNeighborhoods.map((n) => ({ value: n, label: n }))}
-                value={neighborhoods}
-                onChange={setNeighborhoods}
-              />
-            </FilterGroup>
+              <FilterGroup label="Language program">
+                <MultiChips
+                  options={LANGUAGE_OPTIONS.map((l) => ({ value: l, label: l }))}
+                  value={langFilter}
+                  onChange={setLangFilter}
+                />
+              </FilterGroup>
+
+              {allNeighborhoods.length > 0 && (
+                <FilterGroup label="Neighborhood">
+                  <MultiChips
+                    options={allNeighborhoods.map((n) => ({
+                      value: n,
+                      label: n,
+                    }))}
+                    value={neighborhoods}
+                    onChange={setNeighborhoods}
+                  />
+                </FilterGroup>
+              )}
+            </div>
           )}
         </div>
 
@@ -203,8 +246,9 @@ export default function AddSchoolsDrawer({
                 programName={best!.program.programName}
                 tier={best!.odds.tier}
                 pctSuccess={best!.odds.pctSuccess}
+                statsLine={best!.odds.statsLine}
+                summary={best!.odds.summary}
                 distanceMi={dist}
-                oddsPhrase={best!.odds.oddsPhrase}
                 chips={chips}
                 added={added}
                 onAdd={() =>

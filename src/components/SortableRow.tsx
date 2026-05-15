@@ -72,11 +72,21 @@ export default function SortableRow({
             <TierBadge tier={odds.tier} size="sm" />
           </div>
         </div>
-        <div className="text-[12px] text-muted mt-2 leading-[1.55]">
-          {odds.oddsPhrase}
-        </div>
-        <div className="text-[11px] text-muted mt-1">
-          Based on the tier for applicants where {odds.why}.
+        {odds.statsLine && (
+          <div className="text-[11px] text-muted mt-2 tabular-nums">
+            {odds.statsLine}
+          </div>
+        )}
+        {odds.pctSuccess !== null && (
+          <div className="text-[12px] text-ink mt-1.5 leading-[1.5]">
+            <span className="font-medium tabular-nums">
+              {Math.round(odds.pctSuccess * 100)}%
+            </span>{" "}
+            {odds.summary.toLowerCase()}
+          </div>
+        )}
+        <div className="text-[11px] text-muted mt-1.5">
+          Because {odds.why}.
         </div>
       </div>
 
