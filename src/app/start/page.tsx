@@ -5,7 +5,7 @@ import { useState } from "react";
 import { saveSituation } from "@/lib/situation";
 import { SCHOOLS, schoolsWithGrade } from "@/lib/data";
 import {
-  findAttendanceAreaSchool,
+  findAttendanceArea,
   geocode,
   isInCTIP1,
   MAPBOX_TOKEN,
@@ -60,12 +60,16 @@ export default function StartPage() {
         lng = g.lng;
         resolvedAddress = g.address;
         detectedCTIP = isInCTIP1(g.lat, g.lng);
-        const aaName = await findAttendanceAreaSchool(g.lat, g.lng);
-        if (aaName) {
+        const aa = await findAttendanceArea(g.lat, g.lng);
+        if (aa.schoolId) {
+          // Confirm we have data for this school
+          const match = SCHOOLS.find((s) => s.idSchool === aa.schoolId);
+          if (match) detectedAA = match.idSchool;
+        } else if (aa.schoolName) {
           const match = SCHOOLS.find(
             (s) =>
-              s.name.toLowerCase() === aaName.toLowerCase() ||
-              s.name.toLowerCase().startsWith(aaName.toLowerCase())
+              s.name.toLowerCase() === aa.schoolName!.toLowerCase() ||
+              s.name.toLowerCase().startsWith(aa.schoolName!.toLowerCase())
           );
           if (match) detectedAA = match.idSchool;
         }

@@ -60,12 +60,14 @@ async function loadAA(): Promise<GeoJSON.FeatureCollection | null> {
   return _aa && _aa.features && _aa.features.length > 0 ? _aa : null;
 }
 
-export async function findAttendanceAreaSchool(
+export type AALookup = { schoolId: number | null; schoolName: string | null };
+
+export async function findAttendanceArea(
   lat: number,
   lng: number
-): Promise<string | null> {
+): Promise<AALookup> {
   const aa = await loadAA();
-  if (!aa) return null;
+  if (!aa) return { schoolId: null, schoolName: null };
   const point = turf.point([lng, lat]);
   for (const f of aa.features) {
     try {
@@ -77,19 +79,25 @@ export async function findAttendanceAreaSchool(
       ) {
         const props = f.properties as Record<string, unknown> | null;
         if (!props) continue;
-        // Try a few common attribute names
+        // DataSF schema: synergy_na is the full SFUSD name, e_aa_schno is the
+        // idSchool (as a float-string like "507.0").
+        const rawId = props.e_aa_schno as string | number | undefined;
+        const idNum =
+          typeof rawId === "string"
+            ? parseInt(rawId, 10)
+            : typeof rawId === "number"
+              ? Math.round(rawId)
+              : null;
         const name =
-          (props.SCHOOL_NAME as string) ||
-          (props.School_Name as string) ||
-          (props.school_name as string) ||
-          (props.NAME as string) ||
-          (props.SchoolName as string) ||
+          (props.synergy_na as string) ||
+          (props.sch_lng_na as string) ||
+          (props.aaname as string) ||
           null;
-        if (name) return name;
+        return { schoolId: idNum && Number.isFinite(idNum) ? idNum : null, schoolName: name };
       }
     } catch {
       /* skip */
     }
   }
-  return null;
+  return { schoolId: null, schoolName: null };
 }

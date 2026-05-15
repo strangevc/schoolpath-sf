@@ -277,9 +277,16 @@ console.log(`Wrote ${Object.keys(tkFeeders).length} TK feeder mappings`);
     console.warn("CTIP1 shapefile not found at " + shp);
   }
 
-  // AA shapefile — look for it under data/raw/aa_shapefile/*.shp (drop in if available)
+  // AA — first prefer a pre-fetched DataSF GeoJSON (data/raw/aa_datasf.geojson);
+  // fall back to a shapefile under data/raw/aa_shapefile/*.shp.
+  const aaGeoFile = resolve(RAW, "aa_datasf.geojson");
   const aaDir = resolve(RAW, "aa_shapefile");
-  if (existsSync(aaDir)) {
+  if (existsSync(aaGeoFile)) {
+    const buf = readFileSync(aaGeoFile, "utf8");
+    writeFileSync(resolve(OUT, "aa.json"), buf);
+    const parsed = JSON.parse(buf) as GeoJSON.FeatureCollection;
+    console.log(`Copied AA GeoJSON from DataSF: ${parsed.features.length} features`);
+  } else if (existsSync(aaDir)) {
     const fs = await import("node:fs");
     const files = fs.readdirSync(aaDir);
     const shpFile = files.find((f) => f.toLowerCase().endsWith(".shp"));
