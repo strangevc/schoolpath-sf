@@ -319,6 +319,13 @@ export default function BuilderPage() {
               </SortableContext>
             </DndContext>
 
+            <button
+              onClick={() => setDrawerOpen(true)}
+              className="self-start h-12 px-5 rounded-full border border-ink text-ink text-[15px] font-medium hover:bg-ink hover:text-paper transition-colors"
+            >
+              Browse all schools with filters
+            </button>
+
             <Suggestions
               situation={situation}
               list={list}
@@ -337,13 +344,6 @@ export default function BuilderPage() {
                 })
               }
             />
-
-            <button
-              onClick={() => setDrawerOpen(true)}
-              className="self-start h-12 px-5 rounded-full border border-ink text-ink text-[15px] font-medium hover:bg-ink hover:text-paper transition-colors"
-            >
-              Browse all schools with filters
-            </button>
           </div>
 
           {/* RIGHT: coach */}
